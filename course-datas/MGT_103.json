@@ -1,0 +1,908 @@
+{
+  "clos": [
+    {
+      "title": "Accounting as an Information System",
+      "statement": "Define and explain the relationship among the basic accounting concepts of assets, liabilities, stockholder's equity, income and expenses.",
+      "topics": [
+        {
+          "title": "Business Activity"
+        },
+        {
+          "title": "Companies"
+        },
+        {
+          "title": "Concept and Classification of Accounting"
+        },
+        {
+          "title": "Requirements of Accounting"
+        },
+        {
+          "title": "Accounting Equation"
+        },
+        {
+          "title": "Users of Accounting Information"
+        }
+      ]
+    },
+    {
+      "title": "Accounting Cycle",
+      "statement": "Express the effects of business transactions in terms of debits and credits to six different types of accounts and prepare a trial balance to test the equality of debits and credits in the journalizing and ledger posting process.",
+      "topics": [
+        {
+          "title": "Concept"
+        },
+        {
+          "title": "Steps in Accounting Cycle"
+        },
+        {
+          "title": "Concept of Account"
+        },
+        {
+          "title": "Types of Account"
+        },
+        {
+          "title": "Double Entry Accounting System"
+        },
+        {
+          "title": "Journal"
+        },
+        {
+          "title": "Ledger"
+        },
+        {
+          "title": "Trial Balance"
+        }
+      ]
+    },
+    {
+      "title": "Adjusting the Accounts",
+      "statement": "Identify the classes and types of adjusting entries and its posting.",
+      "topics": [
+        {
+          "title": "Concept of Adjustments"
+        },
+        {
+          "title": "Types of Adjustment"
+        },
+        {
+          "title": "Reasons of Adjustments"
+        },
+        {
+          "title": "Adjusting Entries"
+        }
+      ]
+    },
+    {
+      "title": "Worksheet",
+      "statement": "Prepare a work sheet, income statement, statement of owner's equity, and balance sheet using information contained in a work sheet with adjusting and closing entries.",
+      "topics": [
+        {
+          "title": "Concept of Worksheet"
+        },
+        {
+          "title": "Reasons of Worksheet Preparation"
+        },
+        {
+          "title": "Worksheet Problem Exercise of Service Company"
+        },
+        {
+          "title": "Closing Entries"
+        },
+        {
+          "title": "Reversing Entries"
+        }
+      ]
+    },
+    {
+      "title": "Account of Merchandising Company",
+      "statement": "Describe and prepare merchandising company accounts.",
+      "topics": [
+        {
+          "title": "Income Statement"
+        },
+        {
+          "title": "Balance Sheet"
+        },
+        {
+          "title": "Correction of Errors"
+        }
+      ]
+    },
+    {
+      "title": "Special Journals",
+      "statement": "Understand how to prepare special journals.",
+      "topics": [
+        {
+          "title": "Purchase Journal"
+        },
+        {
+          "title": "Sales Journal"
+        },
+        {
+          "title": "Cash Book"
+        },
+        {
+          "title": "Bank Reconciliation Statement"
+        }
+      ]
+    },
+    {
+      "title": "Accounting of Plant Assets",
+      "statement": "Identify plant assets and calculate depreciation.",
+      "topics": [
+        {
+          "title": "Concepts and Nature of Plant Assets"
+        },
+        {
+          "title": "Depreciation"
+        },
+        {
+          "title": "Factors Affecting Depreciation"
+        },
+        {
+          "title": "Methods of Depreciation"
+        }
+      ]
+    },
+    {
+      "title": "Accounting for Different Types of Organizations",
+      "statement": "Compare accounting practices among different organizations.",
+      "topics": [
+        {
+          "title": "Non-trading Concern"
+        },
+        {
+          "title": "Sole Trader Ship and Partnership"
+        }
+      ]
+    },
+    {
+      "title": "Company Accounting",
+      "statement": "Interpret and analyze company accounts.",
+      "topics": [
+        {
+          "title": "Concepts"
+        },
+        {
+          "title": "Types of Shares"
+        },
+        {
+          "title": "Issuance of Shares"
+        }
+      ]
+    },
+    {
+      "title": "Inventory Accounting",
+      "statement": "Calculate cost of ending inventory, cost of goods sold, and effects on net income under the four major inventory cost methods.",
+      "topics": [
+        {
+          "title": "Concept of Inventory"
+        },
+        {
+          "title": "Types of Inventory"
+        },
+        {
+          "title": "Methods of Inventory Calculation"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is the purpose of work sheet? Is it a formal document?"
+        },
+        {
+          "marks": 15,
+          "title": "Prepare worksheet and adjusting entries."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is your idea about classified income statement and classified balance sheet?"
+        },
+        {
+          "marks": 15,
+          "title": "Prepare classified income statement and classified balance sheet."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is depreciation? On which assets you can charge depreciation?"
+        },
+        {
+          "marks": 3,
+          "title": "Point out the reasons of charging depreciation."
+        },
+        {
+          "marks": 12,
+          "title": "Useful life 10 years; scrap value Tk.40,000). Compute annual depreciation using Straight-Line Method and prepare journal entry."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "Discuss the accounting equation and its significance in recording business transactions."
+        },
+        {
+          "marks": 6,
+          "title": "What are the basic objectives of accounting? Explain their importance in business decision-making."
+        },
+        {
+          "marks": 5.5,
+          "title": "What are accounting standards? Why are they necessary?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "Define and Classify inventory."
+        },
+        {
+          "marks": 3,
+          "title": "Why do organizations maintain inventory?"
+        },
+        {
+          "marks": 11.5,
+          "title": "Compute cost under FIFO, LIFO, and Weighted average method; recommend method for income tax purposes."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "Discuss the steps of the accounting cycle in details, and explain how each step ensures accuracy in financial reporting."
+        },
+        {
+          "marks": 6,
+          "title": "\"Adjusting entries are essential for accrual-based accounting.\" Discuss with examples."
+        },
+        {
+          "marks": 5.5,
+          "title": "Describe the relationship between the trial balance, adjusted trail balance, and financial statements."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6.0,
+          "title": "Accounting has often been called the language of business. In what respects would you agree with this description?"
+        },
+        {
+          "marks": 6.0,
+          "title": "Define asset, liability and stockholders' equity."
+        },
+        {
+          "marks": 5.5,
+          "title": "How do liabilities and stockholders' equity differ? How are they similar?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.0,
+          "title": "What type of asset is inventory? Differentiate between work in process and finished goods inventory."
+        },
+        {
+          "marks": 3.5,
+          "title": "What are the consequences of maintaining inadequate and excess inventory?"
+        },
+        {
+          "marks": 10,
+          "title": "Compute cost of ending inventory and COGS under FIFO, LIFO, Weighted Average. Comment which method to pay less income tax."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What are classified income statement and balance sheet?"
+        },
+        {
+          "marks": 2,
+          "title": "What purposes do they serve?"
+        },
+        {
+          "marks": 13,
+          "title": "Prepare classified income statement and balance sheet."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is work sheet? Why is it prepared?"
+        },
+        {
+          "marks": 15,
+          "title": "Prepare worksheet, income statement, balance sheet, closing entries."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "Explain the importance of adjusting entries in the accounting cycle. How do they contribute to the accuracy and completeness of financial statements?"
+        },
+        {
+          "marks": 15,
+          "title": "Prepare the annual year-end adjusting entries indicated by the additional data."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6.0,
+          "title": "Discuss the importance of Generally Accepted Accounting Principles (GAAP). How do these principles ensure consistency, comparability, and reliability in financial reporting?"
+        },
+        {
+          "marks": 6.0,
+          "title": "Define debit and credit. Name the types of accounts that are: A. Increased by a debit. B. Decreased by a debit. C. Increased by a credit. D. Decreased by a credit."
+        },
+        {
+          "marks": 5.5,
+          "title": "A company performed transactions during January (Jan1 invest $20,000 cash; Jan5 purchase office equipment $5,000, $2,000 cash rest on account; Jan10 earn $8,000 revenue, $6,000 cash/$2,000 on account; Jan15 pay $1,000 office rent; Jan20 pay $1,500 on accounts payable). Prepare journal entries and show impact on accounting equation."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is a work sheet?"
+        },
+        {
+          "marks": 2,
+          "title": "Why and when is it prepared?"
+        },
+        {
+          "marks": 13,
+          "title": "Prepare a Ten-column Work Sheet."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "Define and classify inventory."
+        },
+        {
+          "marks": 3,
+          "title": "Why do organizations maintain inventory?"
+        },
+        {
+          "marks": 12,
+          "title": "Compute cost of ending inventory and COGS under FIFO/LIFO/Weighted Average; recommend method for income tax purpose."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is bank reconciliation statement?"
+        },
+        {
+          "marks": 3.5,
+          "title": "What are the common causes of differences between the balances of cash book and bank statement?"
+        },
+        {
+          "marks": 12,
+          "title": "Prepare a bank reconciliation statement."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "Describe the elements of partnership deed."
+        },
+        {
+          "marks": 15,
+          "title": "Prepare journal entries."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "Describe the importance of preparing classified balance sheet."
+        },
+        {
+          "marks": 15,
+          "title": "Prepare classified income statement, statement of owner's equity, and classified balance sheet."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "Classified income statement"
+        },
+        {
+          "marks": 3.5,
+          "title": "Types of adjustment"
+        },
+        {
+          "marks": 3.5,
+          "title": "Characteristics of partnership business"
+        },
+        {
+          "marks": 3.5,
+          "title": "The process of preparing trial balance"
+        },
+        {
+          "marks": 3.5,
+          "title": "Journal and ledger"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "Define accounting. Discuss the role and users of accounting."
+        },
+        {
+          "marks": 4,
+          "title": "What are the various accounting concepts? Discuss."
+        },
+        {
+          "marks": 4.5,
+          "title": "What do you mean by transaction and accounting equation?"
+        },
+        {
+          "marks": 5,
+          "title": "What is financial statement? Discuss their types."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.5,
+          "title": "Identify and describe the financial statements that are mandatory to prepare for profit-seeking organizations."
+        },
+        {
+          "marks": 13,
+          "title": "Prepare classified income statement and classified balance sheet."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "Define inventory. Give an idea about different types of it."
+        },
+        {
+          "marks": 3,
+          "title": "Why do business organizations keep inventory?"
+        },
+        {
+          "marks": 11,
+          "title": "Compute cost of ending inventory and COGS under FIFO/LIFO/Weighted Average; recommend method."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is a work sheet?"
+        },
+        {
+          "marks": 2.5,
+          "title": "Who prepares work sheet and for what purposes?"
+        },
+        {
+          "marks": 13,
+          "title": "Prepare worksheet, income statement, balance sheet."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 15,
+          "title": "Determine the inventory cost and cost of merchandise sold by three methods (FIFO, LIFO, Average cost)."
+        },
+        {
+          "marks": 2.5,
+          "title": "Explain the term fiscal year, calendar year and interim periods."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 15,
+          "title": "On 2016 January 1, Perkins Printing Corporation purchased a digital press for Tk. 14,50,000 (additional Tk. 50,000 to deliver/install/calibrate; 5-year service life; Tk. 1,00,000 salvage value; straight line method). Prepare depreciation schedule, balance sheet presentation at Dec 31 2019, and journal entries for acquisition, annual depreciation, and eventual sale for Tk. 1,00,000."
+        },
+        {
+          "marks": 2.5,
+          "title": "What is the difference between depreciation expenses and accumulated depreciation?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "What is a transaction? What are the features of a business transaction?"
+        },
+        {
+          "marks": 6,
+          "title": "Define accounting. Discuss the branches of it."
+        },
+        {
+          "marks": 5.5,
+          "title": "Who are the users of accounting information? Discuss the users of accounting information?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 10,
+          "title": "On April 30, 2022, J & J Company had cash Tk. 28,000; Accounts Receivable Tk. 80,000; Land Tk. 300,000; Accounts Payable Tk. 72,000 and owner's equity Tk. 3,36,000. Following are the transactions for May 2022 (owner invested Tk.1,00,000; collected Tk.60,000 on account; paid Tk.52,000 on account payable; sold land costing Tk.1,00,000 for Tk.1,00,000 cash; decorating services rendered on account Tk.1,90,000; paid payroll Tk.1,10,000; cash revenue Tk.18,640 received through month; owner withdrew Tk.12,000). Prepare a summary of transactions."
+        },
+        {
+          "marks": 4,
+          "title": "Prepare an income statement for May 31, 2022"
+        },
+        {
+          "marks": 3.5,
+          "title": "Prepare a balance sheet as of May 31, 2022"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "Why adjusting entries are necessary?"
+        },
+        {
+          "marks": 14,
+          "title": "Prepare a 10 column work sheet."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "What do you mean by bank reconciliation statement?"
+        },
+        {
+          "marks": 5,
+          "title": "What are credit and debit memos?"
+        },
+        {
+          "marks": 7.5,
+          "title": "Prepare a bank reconciliation statement."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What type of asset is inventory? Give an idea about the different types of it?"
+        },
+        {
+          "marks": 6,
+          "title": "What are the reasons of maintaining inventory?"
+        },
+        {
+          "marks": 10,
+          "title": "Compute cost of ending inventory and COGS under FIFO/LIFO/Weighted Average; recommend method."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What do you mean by partnership liquidation?"
+        },
+        {
+          "marks": 3.5,
+          "title": "What are the common reasons of partnership liquidation?"
+        },
+        {
+          "marks": 12,
+          "title": "Prepare journal entries."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 14.0,
+          "title": "On June 1, 2021, Muhin formed a business (owner invested Tk.10,00,000; June4 paid rent Tk.12,000; June9 stationary purchased Tk.80,000; June20 misc expenses Tk.60,000 paid; June24 owner withdrew Tk.50,000; June29 land purchased by borrowing Tk.4,00,000 signing a note; June30 salaries Tk.70,000 paid; June30 service fees billed Tk.2,40,000). Prepare a summary of transactions."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7.0,
+          "title": "The M & M Company engaged in transactions during September 2021 (Sep8 owner invested Tk.40,00,000; Sep8 purchased cleaning equipment on account Tk.10,00,000; Sep15 paid cash for building Tk.25,00,000; Sep21 paid Tk.45,000 rent truck 3-month period; Sep22 performed cleaning services on account Tk.4,50,000; Sep21 paid for cleaning equipment purchased Sep8; Sep28 performed cleaning services for cash Tk.2,20,000; Sep28 received and paid electricity bill Tk.16,000; Sep28 paid salaries Tk.80,000; Sep30 owner withdrew Tk.40,000). Prepare the journal entries."
+        },
+        {
+          "marks": 7.0,
+          "title": "Record the transactions into T-accounts."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7.0,
+          "title": "What do you know about service, merchandising and manufacturing companies?"
+        },
+        {
+          "marks": 7.0,
+          "title": "Discuss about the financial statements of business organization."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 14.0,
+          "title": "Prepare a 10 column work sheet for the year ended December 31, 2020."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "What are the purposes of maintaining inventory?"
+        },
+        {
+          "marks": 10,
+          "title": "Compute cost of ending inventory and cost of goods sold under FIFO/LIFO/Weighted Average; comment which method the company should follow."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What are the common reasons of partnership liquidation?"
+        },
+        {
+          "marks": 11,
+          "title": "Prepare journal entries to record the sale of non-cash assets and the distribution of cash."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "Accounting equation"
+        },
+        {
+          "marks": 3.5,
+          "title": "Accounting cycle"
+        },
+        {
+          "marks": 3.5,
+          "title": "Closing process of nominal accounts"
+        },
+        {
+          "marks": 3.5,
+          "title": "Adjusting entries"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is the difference between accounts payable and accounts receivable?"
+        },
+        {
+          "marks": 3,
+          "title": "What is the difference between product costs and period costs?"
+        },
+        {
+          "marks": 4,
+          "title": "What is the difference between a trial balance and a balance sheet?"
+        },
+        {
+          "marks": 4,
+          "title": "How are the balance sheet and income statement connected?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 14,
+          "title": "Prepare purchase and cash disbursement journal for the given May transactions."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is bank reconciliation statement?"
+        },
+        {
+          "marks": 3.5,
+          "title": "What are the common causes of differences between the balances of cash book and bank statement?"
+        },
+        {
+          "marks": 8.5,
+          "title": "Prepare a bank reconciliation statement."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "On 2016 January 1, Moli purchased a printer for her office. She expects that total copies will be 64,000 copies. The residual value of the printer is 30,000 taka. Calculate the depreciation printed by the printer of 20,000 copies in 2016, 24,000 copies in 2017 and 30,000 copies will be printed in 2018 using production unit method."
+        },
+        {
+          "marks": 2,
+          "title": "Hasan purchased a machine of Tk. 1,30,000. Residual value is expected of Tk. 20,000. Expected value 10 years. Calculate the depreciation by using sum of the year digit."
+        },
+        {
+          "marks": 6,
+          "title": "The Rolman Corporation is authorized to issue 1,000,000 shares of Tk. 5 par value common stock (Jan-10 issued 4,00,000 shares at Tk.8/share; July-1 issued 1,00,000 shares for land with asking price Tk.9,00,000, share currently selling at Tk.8.25/share; Sep-1 purchased 10,000 treasury shares at Tk.9/share; Dec-1 sold 4,000 treasury shares at Tk.10/share). Journalize the above transactions."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "The following narrative describes transactions impacting cash, accounts receivable, accounts payable, revenues, and selected expenses accounts (beginning AR Tk. 54,300, AP Tk. 31,275, cash Tk. 85,000; 1. Services for cash Tk. 15,230; 2. Supplies purchased and used on account Tk. 2,400; 3. Collections of outstanding receivable Tk. 19,410; 4. Payments on outstanding accounts payable Tk. 23,900; 5. Services provided on account Tk. 48,654). Use T-accounts to analyze this activity and determine the ending balances for accounts receivable and accounts payable."
+        },
+        {
+          "marks": 6,
+          "title": "Traditions, an upscale university housing complex, prior to recording any adjusting entries for 20X4 has incurred and recorded total salary expense of Tk. 8,75,000 and total rental revenue of Tk. 48,00,000. As of December 31, 20X4, the company owes Tk. 15,000 of additional salaries, and accrued rent due from residents amounts to Tk. 1,00,000. On January 10, 20X5, Traditions paid salaries of Tk. 40,000 covering amounts due as of December 31 plus additional 20X5 amounts. On January 15, 20X5, Traditions received rental payments of Tk. 2,50,000 covering rents due as of December 31, 20X4, and additional amounts relating to the first half of January, 20X5. (i) Prepare the necessary year-end adjusting entries for salaries and rent for 20X4. (ii) Determine the total salaries expense and total rent revenue for 20X4. (iii) Assuming the company uses reversing entries, prepare necessary reversals for early 20X5."
+        },
+        {
+          "marks": 2,
+          "title": "Describe the parts of a T-account."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "The Pips company at December 31 has cash Tk. 20000, non-cash assets Tk. 100000, liabilities Tk. 55000, and capital balances: Annes Tk. 45000 and Mildred Tk. 20000. The firm is liquidated, and Tk. 120000 in cash is received for the non-cash assets. Agnes and Mildred income ratios are 55% and 45% respectively. Prepare a cash distribution schedule and journalize the withdrawal of RIM under each of the assumptions above."
+        },
+        {
+          "marks": 2,
+          "title": "Identify the characteristics of the partnership form of business organization. Identify the bases of dividing net income or net loss."
+        },
+        {
+          "marks": 6,
+          "title": "Prepare the journal entry to record the admission of Dave Matthews under each of the following assumptions: i. Purchase of 50% of Halo's equity for Tk. 19000. ii. Purchase of 50% of Rose's equity for Tk. 10000. iii. Purchase of 33% of Lamp's equity for Tk. 9000."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 14,
+          "title": "Prepare a 10 column work sheet for the Fletcher Plumbing Company for the year ended December 31, 2018."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is accounting?"
+        },
+        {
+          "marks": 8.0,
+          "title": "What are the branches of accounting? Discuss."
+        },
+        {
+          "marks": 7.0,
+          "title": "Who are the users of accounting information? What do they do with accounting information?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.5,
+          "title": "What is unadjusted trial balance? Why and when adjustments are made?"
+        },
+        {
+          "marks": 13.0,
+          "title": "Prepare worksheet and adjusting journal entries."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What do you understand by liquidation of partnership?"
+        },
+        {
+          "marks": 3.0,
+          "title": "What are common reasons of partnership liquidation?"
+        },
+        {
+          "marks": 12.0,
+          "title": "Prepare journal entries."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What is Trial balance? Describe how to correct the incorrect trial balance?"
+        },
+        {
+          "marks": 14.0,
+          "title": "Prepare a trial balance for Khan Enterprise, December 31, 2018."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What do you mean by Inventory? Describe the Inventory Valuation Methods."
+        },
+        {
+          "marks": 14.0,
+          "title": "Compute the cost of ending inventory and cost of goods sold under each method; which method yields the highest gross margin and why."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What do you mean by classified income statement and balance sheet?"
+        },
+        {
+          "marks": 15.0,
+          "title": "Prepare classified income statement, statement of owner's equity, and classified balance sheet."
+        }
+      ]
+    }
+  ]
+}

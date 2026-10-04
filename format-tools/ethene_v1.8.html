@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ethene v1.8</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23d6336c'/%3E%3Cstop offset='1' stop-color='%23ff8fb8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Cg transform='translate(7 7) scale(.75)' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h10a3 3 0 013 3v13H8a3 3 0 01-3-3V4zM5 17a3 3 0 013-3h10'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23d6336c'/%3E%3Cstop offset='1' stop-color='%23ff8fb8'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='9' fill='url(%23g)'/%3E%3Cg transform='translate(7 7) scale(.75)' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 4h10a3 3 0 013 3v13H8a3 3 0 01-3-3V4zM5 17a3 3 0 013-3h10'/%3E%3C/g%3E%3C/svg%3E">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<style>
+*{box-sizing:border-box;margin:0;-webkit-tap-highlight-color:transparent}
+:root{--ink:#3a1428;--mut:#8b5d74;--acc:#d6336c;--acc2:#ff8fb8;--gl:rgba(255,255,255,.55);--gb:rgba(255,255,255,.8);--ln:rgba(190,60,110,.16);--bg:linear-gradient(135deg,#ffe3ee,#ffc9de 55%,#f6d3ff);--sh:0 8px 30px rgba(214,51,108,.16);--hi:rgba(255,255,255,.85);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#ffe6f0;--mut:#d49ab4;--gl:rgba(58,20,40,.55);--gb:rgba(255,150,190,.2);--ln:rgba(255,150,190,.18);--bg:linear-gradient(135deg,#2a0f1e,#3b1229 55%,#2a1236);--hi:rgba(255,255,255,.1)}}
+:root[data-theme="dark"]{--ink:#ffe6f0;--mut:#d49ab4;--gl:rgba(58,20,40,.55);--gb:rgba(255,150,190,.2);--ln:rgba(255,150,190,.18);--bg:linear-gradient(135deg,#2a0f1e,#3b1229 55%,#2a1236);--hi:rgba(255,255,255,.1)}
+html,body{height:100%;overflow:hidden}
+body{font:14px/1.4 "Segoe UI Variable","Segoe UI",system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--bg);display:flex;flex-direction:column;position:relative}
+.blob{position:fixed;border-radius:50%;filter:blur(60px);opacity:.5;pointer-events:none}
+.b1{width:46vmax;height:46vmax;background:#ff7eb6;left:-14vmax;top:-12vmax}.b2{width:40vmax;height:40vmax;background:#c9a6ff;right:-12vmax;bottom:-12vmax;animation-delay:-6s}
+@keyframes fl{to{transform:translate(4vmax,3vmax) scale(1.08)}}
+svg.i{width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.g{background:var(--gl);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--gb);border-radius:14px;box-shadow:var(--sh)}
+header{display:flex;align-items:center;gap:10px;height:52px;padding:0 14px;margin:8px 10px 0;position:relative;z-index:2}
+.logo{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;display:grid;place-items:center}.logo svg{width:18px;height:18px}
+header b{font-weight:600;font-size:15px}header .sp{flex:1}
+.chip{font-size:12px;padding:3px 10px;border-radius:99px;background:var(--hi);border:1px solid var(--ln);color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:48vw}.chip.w{color:var(--acc);border-color:var(--acc)}
+.ib{width:34px;height:34px;border-radius:10px;border:1px solid var(--ln);background:var(--hi);color:var(--ink);display:grid;place-items:center;cursor:pointer;transition:transform .15s}.ib:active{transform:scale(.9)}
+main{flex:1;min-height:0;position:relative}
+.view{position:absolute;inset:0;padding:10px 10px 96px;display:flex;flex-direction:column;gap:10px;opacity:0;transform:translateY(10px) scale(.985);pointer-events:none;transition:opacity .35s ease,transform .45s cubic-bezier(.2,.8,.2,1);overflow:auto}
+.view{visibility:hidden;transition:opacity .3s ease,transform .4s cubic-bezier(.2,.8,.2,1),visibility 0s .4s;will-change:opacity}.view.on{opacity:1;transform:none;pointer-events:auto;visibility:visible;transition-delay:0s}
+.wrapw{width:100%;max-width:720px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+@media(min-width:860px){.wrapw{display:grid;grid-template-columns:1fr 1fr;align-content:start;max-width:920px;gap:12px}.wide{grid-column:1/-1}}
+.drop{padding:16px;display:flex;align-items:center;gap:12px;cursor:pointer;border-style:dashed;border-color:var(--ln);transition:transform .25s,border-color .25s}
+.drop:hover,.drop.ov{transform:translateY(-2px);border-color:var(--acc)}.drop.ok{border-style:solid;border-color:var(--acc)}.drop svg{color:var(--acc);width:28px;height:28px}
+.drop small{display:block;color:var(--mut);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:60vw}
+.grp{padding:10px 12px;display:flex;flex-direction:column;gap:9px}.grp h4{font-size:12.5px;font-weight:600;display:flex;align-items:center;gap:7px}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px}.lb{display:flex;align-items:center;gap:6px;min-width:0}
+.q{width:20px;height:20px;border-radius:50%;border:1px solid var(--ln);background:var(--hi);color:var(--mut);font:600 11px inherit;cursor:pointer;display:grid;place-items:center;flex:none;transition:all .2s}.q:hover{background:var(--acc);color:#fff;border-color:var(--acc)}
+.seg{display:flex;background:var(--hi);border:1px solid var(--ln);border-radius:10px;padding:3px;gap:2px}
+.seg button{flex:1;border:0;background:none;color:var(--ink);font:inherit;font-size:12.5px;padding:6px 8px;border-radius:7px;cursor:pointer;transition:background .25s,color .25s;white-space:nowrap}
+.seg button.on{background:var(--acc);color:#fff;box-shadow:0 2px 8px rgba(214,51,108,.35)}
+.step{display:flex;align-items:center;border:1px solid var(--ln);background:var(--hi);border-radius:12px;padding:2px}
+.step button{width:32px;height:32px;border:0;background:none;color:var(--ink);font-size:18px;border-radius:9px;cursor:pointer}.step button:active{transform:scale(.9)}.step b{min-width:34px;text-align:center;font-size:16px}
+.sw{position:relative;width:42px;height:24px;flex:none}.sw input{opacity:0;position:absolute;inset:0;cursor:pointer;z-index:1}
+.sw span{position:absolute;inset:0;border-radius:99px;background:var(--ln);transition:background .25s}.sw span:after{content:"";position:absolute;left:3px;top:3px;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.25);transition:transform .25s cubic-bezier(.3,.7,.2,1)}
+.sw input:checked+span{background:var(--acc)}.sw input:checked+span:after{transform:translateX(18px)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.stat{padding:9px 11px}.stat b{display:block;font-size:21px;font-weight:600;line-height:1.1}.stat small{color:var(--mut);font-size:11.5px}
+#info{font-size:12.5px;color:var(--mut);padding:0 4px}
+.btn{display:flex;align-items:center;justify-content:center;gap:7px;height:40px;border:0;border-radius:11px;font:600 13px inherit;color:#fff;background:linear-gradient(135deg,var(--acc),var(--acc2));cursor:pointer;transition:.2s;padding:0 12px}.btn:active{transform:scale(.97)}.btn:disabled{opacity:.4;pointer-events:none}.btn.o{background:var(--hi);color:var(--acc);border:1px solid var(--ln)}
+.btns{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+select{font:inherit;color:var(--ink);background:var(--hi);border:1px solid var(--ln);border-radius:10px;padding:6px 8px;max-width:55%}
+.stage{flex:1;min-height:0;display:grid;place-items:center;perspective:1700px;width:100%;max-width:900px;margin:0 auto;position:relative}
+.card{position:relative;transform-style:preserve-3d;transition:transform .8s cubic-bezier(.3,.7,.2,1)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#fff;border-radius:3px;box-shadow:0 14px 36px rgba(140,20,70,.28)}.face canvas{width:100%;height:100%;display:block}
+.card.flip{transform:rotateY(180deg)}.card.top.flip{transform:rotateX(180deg)}.b{transform:rotateY(180deg)}.card.top .b{transform:rotateX(180deg)}.b.rot canvas{transform:rotate(180deg)}
+.tag{position:absolute;left:8px;top:8px;font-size:11px;background:rgba(214,51,108,.9);color:#fff;border-radius:99px;padding:2px 9px;z-index:2}
+.bar{display:flex;align-items:center;gap:8px;padding:8px 10px;align-self:center;width:100%;max-width:560px}.bar input{flex:1;accent-color:var(--acc);min-width:0}
+.bar button{border:0;background:var(--hi);color:var(--ink);width:38px;height:38px;border-radius:11px;display:grid;place-items:center;cursor:pointer;flex:none}.bar button.act{background:var(--acc);color:#fff}.bar button:disabled{opacity:.35;pointer-events:none}
+.empty{margin:auto;color:var(--mut);text-align:center;max-width:260px}
+.pg{height:6px;border-radius:9px;background:var(--ln);overflow:hidden}.pg i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--acc),var(--acc2));transition:width .5s cubic-bezier(.3,.7,.2,1)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}.chips button{border:1px solid var(--ln);background:var(--hi);color:var(--ink);border-radius:99px;font:inherit;font-size:12px;padding:4px 11px;cursor:pointer}.chips button.on{background:var(--acc);color:#fff;border-color:var(--acc)}.chips button.dn{border-color:var(--acc);color:var(--acc)}.chips button.on.dn{color:#fff}
+.st{display:flex;gap:11px;align-items:flex-start;padding:10px 12px;cursor:pointer;transition:opacity .3s}.st p{color:var(--mut);font-size:12.5px}.st.dn{opacity:.55}.st.dn b{text-decoration:line-through}
+.ck{width:22px;height:22px;border-radius:7px;border:1.5px solid var(--acc);flex:none;display:grid;place-items:center;color:#fff;margin-top:1px;transition:background .25s}.dn .ck{background:var(--acc)}.ck svg{width:14px;height:14px;opacity:0;transition:opacity .2s}.dn .ck svg{opacity:1}
+nav{position:fixed;left:50%;bottom:calc(14px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);display:flex;gap:4px;padding:6px;border-radius:24px;z-index:5}
+nav button{display:flex;align-items:center;border:0;background:none;color:var(--mut);font:600 14px inherit;height:44px;padding:0 12px;border-radius:18px;cursor:pointer;transition:background .3s,color .3s,padding .3s}
+nav button span{max-width:0;overflow:hidden;white-space:nowrap;transition:max-width .35s cubic-bezier(.3,.7,.2,1),margin .35s}
+nav button.on{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;padding:0 16px}nav button.on span{max-width:90px;margin-left:8px}
+#hint{position:fixed;right:12px;top:calc(68px + env(safe-area-inset-top,0px));width:min(320px,calc(100vw - 24px));z-index:8;padding:13px 14px 16px;transform:translateX(calc(100% + 24px));opacity:0;transition:transform .5s cubic-bezier(.2,.9,.2,1),opacity .3s;pointer-events:none;overflow:hidden}
+#hint.on{transform:none;opacity:1;pointer-events:auto}#hint h3{font-size:15px;margin-bottom:6px}#hint p{font-size:12.5px;color:var(--mut);margin-bottom:6px}#hint p b{color:var(--ink)}
+#hint .x{position:absolute;right:10px;top:8px;border:0;background:none;color:var(--mut);font-size:19px;cursor:pointer}
+#hint .bar2{position:absolute;left:0;bottom:0;height:3px;width:100%;background:linear-gradient(90deg,var(--acc),var(--acc2));transform-origin:left;transform:scaleX(0)}#hint.run .bar2{animation:pb 9s linear forwards}@keyframes pb{from{transform:scaleX(1)}to{transform:scaleX(0)}}
+#toast{position:fixed;left:50%;top:70px;transform:translate(-50%,-20px);opacity:0;padding:8px 16px;border-radius:99px;z-index:9;transition:.35s;pointer-events:none;font-size:13px}#toast.on{opacity:1;transform:translate(-50%,0)}
+button:focus-visible,input:focus-visible+span{outline:2px solid var(--acc);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition-duration:.01s!important;animation:none!important}}
+
+#v-prev{overflow:hidden}#v-prep,#v-asm{overflow-x:hidden;overflow-y:auto}
+.split{display:grid;gap:10px;grid-template-columns:1fr;width:100%;max-width:980px;margin:0 auto;min-height:0}.col{display:flex;flex-direction:column;gap:10px;min-height:0}.side{display:none;padding:14px;gap:8px}
+@media(min-width:860px){.split{grid-template-columns:1.1fr .9fr}.side{display:flex}}
+.drop{padding:12px 14px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.stat{padding:8px 10px}.stat b{font-size:19px}
+.pane{padding:8px 10px 12px}.tabs{margin-bottom:4px}.panel{display:none;flex-direction:column;gap:12px;padding:6px 2px 0}.panel.on{display:flex;animation:pin .3s ease}@keyframes pin{from{opacity:0;transform:translateY(6px)}}
+.row small{display:block;color:var(--mut);font-size:11.5px;line-height:1.25;margin-top:1px}.lb b{font-weight:600;font-size:13px}
+.num{display:flex;align-items:center;border:1px solid var(--ln);background:var(--hi);border-radius:12px;padding:2px;transition:box-shadow .2s,border-color .2s}.num:focus-within{border-color:var(--acc);box-shadow:0 0 0 3px rgba(214,51,108,.18)}
+.num button{width:32px;height:32px;border:0;background:none;color:var(--ink);font-size:18px;border-radius:9px;cursor:pointer}.num button:active{transform:scale(.88)}.num input{width:48px;border:0;background:none;text-align:center;font:600 16px inherit;color:var(--ink);outline:0}
+.pbar{display:flex;align-items:center;gap:8px;padding:6px 8px;flex-wrap:wrap}.pbar .sp{flex:1}.pbar .btn{height:32px;font-size:12px}[data-t]{display:none!important}.tst [data-t]{display:flex!important}
+.zm{display:flex;align-items:center;gap:2px}.zm button{width:30px;height:30px;border:0;background:var(--hi);border-radius:8px;color:var(--ink);cursor:pointer;font-size:16px}.zm span{min-width:42px;text-align:center;font-size:12px;font-weight:600}
+.stage{display:flex;overflow:auto;perspective:none}.wrap{margin:auto;padding:8px;perspective:1700px}
+.sel h5{color:var(--acc)}#hint h5{font-size:11.5px;margin:10px 0 4px}#hint ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:4px}#hint li{display:flex;gap:8px;font-size:12.5px;color:var(--mut)}#hint li:before{content:"";flex:none;width:6px;height:6px;border-radius:50%;background:var(--acc);margin-top:6px}.sel li{color:var(--ink)!important}.not li:before{background:var(--mut)!important}
+#hint{max-height:calc(100dvh - 150px);overflow-y:auto;scrollbar-width:none}#hint:hover .bar2{animation-play-state:paused}#hint .pill{font-size:11px;font-weight:600;color:var(--acc);background:var(--hi);border:1px solid var(--ln);border-radius:99px;padding:2px 9px}
+#hv{border-radius:12px;border:1px solid var(--ln);background:var(--hi);padding:6px;margin:8px 0}#hv svg{width:100%;display:block}.prec div{font-size:12px;padding:6px 9px;border-radius:8px;background:var(--hi);border:1px solid var(--ln)}
+.dash{stroke-dasharray:4 4}.live svg{width:100%}.chips{overflow-x:auto;flex-wrap:nowrap;scrollbar-width:none}.chips button{flex:none}
+
+:root{--pop:#fff4f8}:root[data-theme="dark"]{--pop:#3b1229}@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--pop:#3b1229}}
+.split{grid-template-columns:minmax(0,1fr)}@media(min-width:860px){.split{grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr)}}
+.col{min-width:0}.drop{width:100%;height:64px;min-width:0}.drop>div{min-width:0;flex:1}.drop small{max-width:100%!important;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.pbar label.btn,.pbar>.btn{width:140px;overflow:hidden;flex:none}.pbar label.btn span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
+.dd{position:relative;width:190px;max-width:55%}.ddb{width:100%;display:flex;align-items:center;justify-content:space-between;gap:8px;height:36px;padding:0 10px;border:1px solid var(--ln);border-radius:10px;background:var(--hi);color:var(--ink);font:inherit;font-size:13px;cursor:pointer;transition:border-color .2s,box-shadow .2s}.ddb span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ddb svg{width:16px;height:16px;transition:transform .25s}
+.dd.open .ddb{border-color:var(--acc);box-shadow:0 0 0 3px rgba(214,51,108,.18)}.dd.open .ddb svg{transform:rotate(180deg)}
+.ddl{position:absolute;right:0;bottom:calc(100% + 6px);min-width:100%;max-height:190px;overflow:auto;padding:4px;border-radius:12px;background:var(--pop);border:1px solid var(--gb);box-shadow:var(--sh);opacity:0;visibility:hidden;transform:translateY(6px);transition:opacity .2s,transform .25s,visibility 0s .25s;z-index:7;scrollbar-width:thin}
+.dd.open .ddl{opacity:1;visibility:visible;transform:none;transition-delay:0s}.ddl button{display:block;width:100%;text-align:left;padding:7px 10px;border:0;background:none;color:var(--ink);font:inherit;font-size:13px;border-radius:8px;cursor:pointer;white-space:nowrap}.ddl button:hover,.ddl button.on{background:var(--acc);color:#fff}
+.sws{display:flex;gap:6px;align-items:center}.sws button,.swc{position:relative;width:26px;height:26px;border-radius:50%;border:2px solid var(--gb);cursor:pointer;padding:0;display:grid;place-items:center;font-size:15px;color:var(--mut);background:var(--hi);transition:box-shadow .2s,border-color .2s}.sws button.on{border-color:var(--acc);box-shadow:0 0 0 2px var(--acc2)}.swc input{position:absolute;inset:0;opacity:0;width:100%;height:100%;cursor:pointer}
+#tdrawer{position:absolute;right:10px;top:58px;width:min(340px,calc(100% - 20px));z-index:6;padding:10px 12px 14px;display:flex;flex-direction:column;gap:10px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .25s,transform .3s,visibility 0s .3s}#tdrawer.on{opacity:1;visibility:visible;transform:none;transition-delay:0s}
+.tpanel{display:none;flex-direction:column;gap:12px}.tpanel.on{display:flex;animation:pin .3s ease}
+#hint{max-height:none!important;overflow:hidden!important;padding:12px 14px 14px}#hint h3{font-size:14px;margin:6px 0 0!important}#hv{margin:6px 0;padding:4px}#hv svg{max-height:min(118px,15vh);margin:0 auto}#hint p{font-size:12px;margin:0 0 2px}#hint h5{margin:7px 0 3px}#hint li{font-size:12px}.prec div{font-size:11.5px}
+@media(max-height:720px){#hint>p{display:none}}@media(max-height:600px){#hint .not{display:none}}
+
+header{width:calc(100% - 20px);max-width:var(--hw,980px);margin:8px auto 0;transition:max-width .4s cubic-bezier(.2,.8,.2,1)}
+body[data-v=prev]{--hw:900px}body[data-v=asm]{--hw:720px}
+.pbar{width:100%;max-width:900px;margin:0 auto}.bar{max-width:900px}
+
+.tt{display:flex;flex-direction:column;line-height:1.15}.tt small{font-size:10.5px;color:var(--mut);letter-spacing:.2px}
+
+.pbar{position:relative;z-index:4}#psg{display:none;width:160px}.m-sig #psg{display:block}#psg .ddl{bottom:auto;top:calc(100% + 6px);right:auto;left:0}
+
+/* ===== v1.8: themed auto-hide scrollbars ===== */
+:root{--sbt:rgba(214,51,108,.5)}:root[data-theme="dark"]{--sbt:rgba(255,143,184,.5)}@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--sbt:rgba(255,143,184,.5)}}
+*{scrollbar-width:thin;scrollbar-color:transparent transparent}*:hover,.sbv{scrollbar-color:var(--sbt) transparent}
+.chips,#hint{scrollbar-width:none}.chips::-webkit-scrollbar,#hint::-webkit-scrollbar{display:none}
+@supports not (scrollbar-color:auto){*::-webkit-scrollbar{width:8px;height:8px;background:transparent}*::-webkit-scrollbar-track{background:transparent}*::-webkit-scrollbar-thumb{background:transparent;border-radius:99px;border:2px solid transparent;background-clip:padding-box;transition:background-color .3s}*:hover::-webkit-scrollbar-thumb,.sbv::-webkit-scrollbar-thumb{background-color:var(--sbt)}}
+/* ===== v1.8: popover surfaces (settings tooltip + test settings) ===== */
+#hint,#tdrawer{background:color-mix(in srgb,var(--pop) 94%,transparent);backdrop-filter:blur(22px) saturate(1.4);-webkit-backdrop-filter:blur(22px) saturate(1.4);border:1px solid var(--gb);box-shadow:0 18px 50px rgba(140,20,70,.26),0 2px 8px rgba(140,20,70,.1)}
+#hint{border-radius:16px}#hint .x{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;line-height:1;padding:0;transition:background .2s,color .2s}#hint .x:hover{background:var(--hi);color:var(--acc)}
+#tdrawer{top:56px;width:min(364px,calc(100% - 20px));max-height:calc(100% - 68px);padding:0;gap:0;border-radius:18px;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;transform-origin:top right;transform:translateY(-8px) scale(.97)}
+#tdrawer.on{transform:none}
+.th{position:sticky;top:0;z-index:3;display:flex;align-items:center;gap:11px;padding:12px 12px 11px 14px;background:var(--pop);border-bottom:1px solid var(--ln)}
+.th .ic{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;display:grid;place-items:center;flex:none;box-shadow:0 4px 12px rgba(214,51,108,.35)}.th .ic svg{width:18px;height:18px}
+.th b{display:block;font-size:14px;font-weight:600;line-height:1.2}.th small{display:block;font-size:11.5px;color:var(--mut);line-height:1.3}
+.th .ib{margin-left:auto;width:30px;height:30px;border-radius:9px;flex:none}.th .ib:hover{color:var(--acc)}
+.tb{padding:12px 14px 4px;display:flex;flex-direction:column;gap:6px}
+.tpanel{gap:0}.tpanel .row{padding:11px 0;border-bottom:1px solid var(--ln)}.tpanel .row:last-child{border-bottom:0}
+.tpanel .lb{flex:1;justify-content:space-between;gap:8px}.tpanel .lb>span:first-child{min-width:0}.tpanel .lb b{display:block;font-size:13px}
+.tpanel .row:has(.seg){flex-direction:column;align-items:stretch;gap:9px}
+.tpanel .row:has(.seg) .lb{width:100%}
+.tpanel .seg{background:color-mix(in srgb,var(--ln) 55%,transparent)}.tpanel .seg button{padding:7px 8px}
+.tpanel .sw span{background:rgba(139,93,116,.3)}.tpanel .sw input:checked+span{background:var(--acc)}
+#ttabs{margin-bottom:4px}
+.tf{position:sticky;bottom:0;z-index:3;display:flex;gap:8px;padding:10px 14px 12px;background:var(--pop);border-top:1px solid var(--ln)}.tf .btn{flex:1;height:36px;font-size:12.5px}
+#tcfg.act{background:linear-gradient(135deg,var(--acc),var(--acc2));color:#fff;border-color:transparent}
+</style></head>
+<body data-v="prep">
+<div class="blob b1"></div><div class="blob b2"></div>
+<header class="g"><div class="logo"><svg class="i" viewBox="0 0 24 24"><path d="M5 4h10a3 3 0 013 3v13H8a3 3 0 01-3-3V4zM5 17a3 3 0 013-3h10"/></svg></div><div class="tt"><b>Ethene</b><small>Built by Bijoy</small></div><span class="chip">v1.8</span><span class="sp"></span><span class="chip" id="chip">No PDF yet</span><button class="ib" id="th" title="Theme"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px"><path d="M20 14.5A8 8 0 019.5 4 8 8 0 1020 14.5z"/></svg></button></header>
+<main>
+<section class="view on" id="v-prep"><div class="split"><div class="col">
+<label class="drop g" id="drop"><input type="file" id="file" accept="application/pdf" hidden><svg class="i" viewBox="0 0 24 24"><path d="M12 16V5M7 10l5-5 5 5M5 19h14"/></svg><div><b>Upload your book PDF</b><small id="fsub">Tap or drop a file. It never leaves your device.</small></div></label>
+<div class="stats" id="stats"></div>
+<div class="grp g pane"><div class="seg tabs" id="tabs"><button data-p="lay" class="on">Layout</button><button data-p="prt">Printer</button><button data-p="fin">Finish</button><button data-p="exp">Export</button></div>
+<div class="panel on" id="p-lay"></div><div class="panel" id="p-prt"></div><div class="panel" id="p-fin"></div>
+<div class="panel" id="p-exp"><div class="row"><span class="lb"><span><b>Scope</b><small>Whole book or one signature</small></span><button class="q" data-h="scope">?</button></span><div class="dd" id="sg"></div></div>
+<div class="btns"><button class="btn" id="dF">Fronts</button><button class="btn" id="dB">Backs</button><button class="btn o" id="dX">Duplex (one PDF)</button><button class="btn o" id="dZ">All signatures (ZIP)</button></div><button class="btn o" id="dT">Printer test (8 pages)</button><p id="info" style="font-size:12px;color:var(--mut)"></p></div></div></div>
+<div class="col g side live" id="live"></div></div></section>
+<section class="view" id="v-prev"><div class="pbar g" id="pbar"><div class="seg" id="src"><button data-v="book" class="on">My book</button><button data-v="test">Test PDFs</button></div><div class="seg" id="pm"><button data-v="sheet" class="on" title="Printed sheets, front and back">Sheets</button><button data-v="sig" title="One folded signature, opened page by page">Signature</button><button data-v="book" title="All signatures merged into the finished book">Book</button></div><div class="dd" id="psg"></div>
+<label class="btn o" data-t id="tf"><input type="file" accept="application/pdf" hidden><span>Front PDF</span></label><label class="btn o" data-t id="tb"><input type="file" accept="application/pdf" hidden><span>Back PDF</span></label><button class="btn o" data-t id="tcfg">Settings</button>
+<span class="sp"></span><div class="zm"><button id="zo">−</button><span id="zl">100%</span><button id="zi">+</button><button id="zf" title="Fit">⤢</button></div></div>
+<div id="tdrawer" class="g" role="dialog" aria-label="Test PDF settings"><div class="th"><span class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg></span><div><b>Test PDF settings</b><small>Describe how your PDFs were printed</small></div><button class="ib" id="tx" aria-label="Close settings"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div><div class="tb"><div class="seg" id="ttabs"><button data-p="t-lay" class="on">Layout</button><button data-p="t-prt">Printer</button><button data-p="t-oth">Other</button></div><div class="tpanel on" id="t-lay"></div><div class="tpanel" id="t-prt"></div><div class="tpanel" id="t-oth"></div></div><div class="tf"><button class="btn o" id="trs">Reset to defaults</button><button class="btn" id="tdone">Done</button></div></div>
+<div class="stage" id="stage"><div class="wrap" id="wrap"><div class="card" id="card"><div class="face"><canvas id="cf"></canvas></div><div class="face b" id="bk"><canvas id="cb"></canvas></div></div></div></div>
+<div class="bar g"><span class="tag" id="ptag" style="position:static;white-space:nowrap"></span><button id="pv"><svg class="i" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button><input type="range" id="rg" min="1" max="1" value="1"><button id="fl"><svg class="i" viewBox="0 0 24 24"><path d="M4 8h13l-3-3M20 16H7l3 3"/></svg></button><button id="nx"><svg class="i" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button></div></section>
+<section class="view" id="v-asm"><div class="wrapw" id="asm"></div></section>
+</main>
+<aside id="hint" class="g"></aside>
+<div id="toast" class="g"></div>
+<nav class="g"><button data-v="prep" class="on"><svg class="i" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg><span>Prepare</span></button><button data-v="prev"><svg class="i" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg><span>Preview</span></button><button data-v="asm"><svg class="i" viewBox="0 0 24 24"><path d="M9 11l3 3 8-8M20 12v7a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9"/></svg><span>Assemble</span></button></nav>
+<script>
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
+try{pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js'}catch(e){}
+const S={bytes:null,doc:null,pj:null,N:0,bg:[255,255,255],name:''};
+const C={lay:'two',k:6,left:'small',edge:'side',rev:0,rot:0,mode:'color',mg:0,fold:1,tag:1};
+try{Object.assign(C,JSON.parse(localStorage.getItem('eth-c')||'{}'));const t=localStorage.getItem('eth-t');if(t)document.documentElement.dataset.theme=t}catch(e){}
+let A={k:'',d:{}};try{A=JSON.parse(localStorage.getItem('eth-a'))||A}catch(e){}
+const sv=()=>{try{localStorage.setItem('eth-c',JSON.stringify(C))}catch(e){}},svA=()=>{try{localStorage.setItem('eth-a',JSON.stringify(A))}catch(e){}};
+let view='prep',pi=0,sgSel=-1;
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(t._t);t._t=setTimeout(()=>t.classList.remove('on'),2600)}
+/* ---- imposition (theory: front P-2i | 1+2i, back 2+2i | P-1-2i) ---- */
+const SP=(c=C)=>c.lay==='two'?4:2;
+function plan(N,c=C){const sh=Math.ceil(N/SP(c)),k=Math.max(1,c.k),z=[];if(!sh)return z;const f=Math.floor(sh/k),r=sh%k;for(let i=0;i<f;i++)z.push(k);if(r){if(c.left==='merge'&&f)z[f-1]+=r;else z.push(c.left==='pad'?k:r)}return z}
+function sheets(z,c=C){const o=[];let b=0;z.forEach((k,s)=>{if(c.lay==='two'){const P=4*k;for(let i=0;i<k;i++)o.push({s,i,f:[b+P-2*i-1,b+2*i],b:[b+2*i+1,b+P-2*i-2]});b+=P}else{for(let i=0;i<k;i++)o.push({s,i,f:[b+2*i],b:[b+2*i+1]});b+=2*k}});return o}
+function selfTest(){const sv0={...C};let ok=true;for(const lay of['two','fold'])for(const left of['small','merge','pad'])for(let k=1;k<=8;k++)for(let N=1;N<=70;N+=2){Object.assign(C,{lay,left,k});const seen=sheets(plan(N)).flatMap(x=>[...x.f,...x.b]).filter(n=>n<N).sort((a,b)=>a-b);if(seen.length!==N||seen.some((n,i)=>n!==i))ok=false}
+Object.assign(C,sv0);const t=sheets([1])[0];C.lay='two';const a=sheets([1])[0];Object.assign(C,sv0);return ok&&a.f.join()==='3,0'&&a.b.join()==='1,2'}
+/* ---- PDF build ---- */
+async function build(side,o={}){const {PDFDocument,rgb,degrees,StandardFonts}=PDFLib,two=C.lay==='two',W=two?841.89:595.28,H=two?595.28:841.89,hw=two?W/2:W,keep={...C};
+if(o.test)Object.assign(C,{k:2,left:'small'});
+try{const N=o.test?8:S.N,z=plan(N),all=sheets(z).filter(x=>o.only==null||x.s===o.only),bg=C.mode==='color'?rgb(...S.bg.map(v=>v/255)):rgb(1,1,1),d=await PDFDocument.create(),fnt=await d.embedFont(StandardFonts.HelveticaBold),emb=[];
+if(!o.test){const need=[...new Set(all.flatMap(x=>[...x.f,...x.b]).filter(n=>n<N))].sort((a,b)=>a-b);(await d.embedPdf(S.doc||(S.doc=await PDFDocument.load(S.bytes,{ignoreEncryption:true})),need)).forEach((e,i)=>emb[need[i]]=e)}
+let list=side==='x'?all.flatMap(s=>[[s,'f'],[s,'b']]):all.map(s=>[s,side]);if(C.rev&&side==='b')list.reverse();
+const m=C.mg*2.835,pink=rgb(.76,.09,.36),gray=rgb(.45,.45,.45),erot=!!C.rot;
+for(const[s,sd]of list){const p=d.addPage([W,H]);p.drawRectangle({x:0,y:0,width:W,height:H,color:bg});
+s[sd].forEach((n,j)=>{if(n>=N)return;const x0=j*hw;
+if(o.test){p.drawRectangle({x:x0+20,y:20,width:hw-40,height:H-40,borderWidth:2,borderColor:pink});const t=String(n+1);p.drawText(t,{x:x0+hw/2-fnt.widthOfTextAtSize(t,two?150:200)/2,y:H/2-50,size:two?150:200,font:fnt,color:pink});p.drawText((sd==='f'?'FRONT':'BACK')+'  ^ TOP',{x:x0+40,y:H-60,size:18,font:fnt,color:gray})}
+else{const e=emb[n],sc=Math.min((hw-2*m)/e.width,(H-2*m)/e.height),w=e.width*sc,h=e.height*sc;p.drawPage(e,{x:x0+(hw-w)/2,y:(H-h)/2,xScale:sc,yScale:sc})}});
+if(C.fold&&C.lay!=='flat')p.drawLine(two?{start:{x:W/2,y:0},end:{x:W/2,y:H},thickness:.4,color:gray,dashArray:[3,5]}:{start:{x:0,y:H/2},end:{x:W,y:H/2},thickness:.4,color:gray,dashArray:[3,5]});
+if(C.tag){const t=`S${s.s+1}  ${s.i+1}/${z[s.s]}  ${sd==='f'?'F':'B'}`;p.drawText(t,{x:W/2-fnt.widthOfTextAtSize(t,6)/2,y:5,size:6,font:fnt,color:gray})}
+if(sd==='b'&&erot)p.setRotation(degrees(180))}
+return await d.save()}finally{Object.assign(C,keep)}}
+async function out(nm,u8){const cl=window.claude&&await claude.use('downloads');if(cl)await cl.save({filename:nm,data:u8});else{const a=document.createElement('a');a.href=URL.createObjectURL(u8 instanceof Blob?u8:new Blob([u8],{type:'application/pdf'}));a.download=nm;a.click()}}
+const slug=()=>(S.name||'Book').replace(/\.pdf$/i,'').replace(/[^A-Za-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,40)||'Book';
+const pad=(i,n)=>String(i).padStart(Math.max(2,String(n).length),'0'),SD={f:'Front',b:'Back',x:'Duplex'};
+async function dl(side,o={}){try{toast('Building PDF…');const u8=await build(side,o),n=plan(S.N).length,nm=o.test?`Ethene_Test_${SD[side]}.pdf`:o.only!=null?`Ethene_${slug()}_Sig-${pad(o.only+1,n)}_${SD[side]}.pdf`:`Ethene_${slug()}_${SD[side]}.pdf`;await out(nm,u8);toast('Ready: '+nm)}catch(e){console.error(e);toast('Not saved')}}
+const crcT=(()=>{const t=[];for(let n=0;n<256;n++){let c=n;for(let k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;t[n]=c>>>0}return t})(),crc=u=>{let c=-1;for(let i=0;i<u.length;i++)c=crcT[(c^u[i])&255]^(c>>>8);return(c^-1)>>>0};
+function zip(fs){const en=new TextEncoder(),parts=[],cen=[];let off=0;for(const f of fs){const n=en.encode(f.name),c=crc(f.data),z=f.data.length,h=new DataView(new ArrayBuffer(30));h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x0800,true);h.setUint32(14,c,true);h.setUint32(18,z,true);h.setUint32(22,z,true);h.setUint16(26,n.length,true);parts.push(new Uint8Array(h.buffer),n,f.data);const d=new DataView(new ArrayBuffer(46));d.setUint32(0,0x02014b50,true);d.setUint16(4,20,true);d.setUint16(6,20,true);d.setUint16(8,0x0800,true);d.setUint32(16,c,true);d.setUint32(20,z,true);d.setUint32(24,z,true);d.setUint16(28,n.length,true);d.setUint32(42,off,true);cen.push(new Uint8Array(d.buffer),n);off+=30+n.length+z}
+const cs=cen.reduce((a,b)=>a+b.length,0),e=new DataView(new ArrayBuffer(22));e.setUint32(0,0x06054b50,true);e.setUint16(8,fs.length,true);e.setUint16(10,fs.length,true);e.setUint32(12,cs,true);e.setUint32(16,off,true);return new Blob([...parts,...cen,new Uint8Array(e.buffer)],{type:'application/zip'})}
+async function dlZip(){try{const n=plan(S.N).length,fs=[];for(let i=0;i<n;i++){toast(`Building signature ${i+1} of ${n}…`);for(const s of['f','b'])fs.push({name:`Signature-${pad(i+1,n)}_${SD[s]}.pdf`,data:await build(s,{only:i})});await new Promise(r=>setTimeout(r,20))}const nm=`Ethene_${slug()}_Signatures.zip`;await out(nm,zip(fs));toast('Ready: '+nm)}catch(e){console.error(e);toast('Not saved')}}
+/* ---- controls + tooltips ---- */
+const R=(x,y,w,h,t,o={})=>`<g${o.r?` transform="rotate(${o.r} ${x+w/2} ${y+h/2})"`:''}><rect x="${x}" y="${y}" width="${w}" height="${h}" rx="3" fill="${o.f||'var(--hi)'}" stroke="var(--acc)" stroke-opacity=".6"/>${t!=null?`<text x="${x+w/2}" y="${y+h/2+5}" text-anchor="middle" font-size="${o.s||13}" font-weight="600" fill="var(--acc)">${t}</text>`:''}</g>`;
+const T=(x,y,t)=>`<text x="${x}" y="${y}" text-anchor="middle" font-size="9.5" fill="var(--mut)">${t}</text>`,AR=d=>`<path d="${d}" fill="none" stroke="var(--acc)" stroke-width="1.6" stroke-linecap="round" marker-end="url(#ah)"/>`,DL=(a,b,c,d)=>`<path class="dash" d="M${a} ${b}L${c} ${d}" stroke="var(--acc)" stroke-width="1.3" fill="none"/>`;
+const SV=s=>`<svg viewBox="0 0 240 130"><defs><marker id="ah" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L8 4 0 8z" fill="var(--acc)"/></marker></defs>${s}</svg>`;
+const SGD=(a,p)=>{let x=10,o='';a.forEach((c,j)=>{const w=c*8;o+=R(x,20,w,56,c)+(j==a.length-1&&p?`<rect x="${x+w}" y="20" width="${p*8}" height="56" rx="3" fill="var(--ln)"/>${T(x+w+p*4,52,'blank')}`:'')+T(x+w/2,92,'Sig '+(j+1));x+=w+(j==a.length-1&&p?p*8:0)+10});return o+T(120,118,'16 sheets, 6 per signature')};
+const PAIR=r=>[1,2,3].map((n,j)=>R(24,8+j*38,56,28,'F'+n,{s:12})+AR(`M86 ${22+j*38}H112`)+R(120,8+j*38,56,28,'B'+(r?4-n:n),{s:12})).join('')+T(205,64,r?'Reversed':'Same');
+const FL=h=>R(20,18,64,90,'A')+(h?DL(10,63,94,63)+AR('M96 26Q112 63 96 100'):DL(52,10,52,120)+AR('M26 14Q52 2 78 14'))+AR('M112 62H130')+R(138,18,64,90,'A')+T(170,122,'Back reads upright');
+const RT=r=>R(24,14,64,92,'A')+T(56,120,'As saved')+AR('M96 60H122')+R(132,14,64,92,'A',{r:r?180:0})+T(164,120,r?'Upside-down':'Upright');
+const H={
+'lay:two':['Layout','2-up (standard)','Two book pages sit side by side on each A4 landscape side, so one sheet carries 4 pages. Sheets are nested and folded in half.',['You fold sheets in half to make a booklet','You want the accepted signature method'],['Your pages should print one per side'],'Sheet = 2 sides × 2 pages. One sheet: front 4 | 1, back 2 | 3.',()=>SV(R(8,16,44,60,'4')+R(52,16,44,60,'1')+T(52,90,'Front')+AR('M102 46H120')+R(126,16,44,60,'2')+R(170,16,44,60,'3')+T(170,90,'Back')+T(120,116,'Page 2 sits behind 1, page 3 behind 4'))],
+'lay:fold':['Layout','1-up folded','One page per A4 portrait side. Every sheet is folded in half on its own, along a dashed line.',['You want single folded leaves','You print one page per side'],['You want nested signatures'],'Sheet = 2 pages. Dashed line = fold.',()=>SV(R(14,8,70,104,'1')+DL(14,60,84,60)+T(49,124,'Fold line')+AR('M94 60H120')+R(130,38,80,44,'1 | 2',{s:12})+T(170,98,'Folded leaf'))],
+'lay:flat':['Layout','1-up flat','One page per A4 portrait side. Sheets stay flat and are stacked in order, with no folding.',['You bind loose sheets','You do not fold anything'],['You want folded signatures'],'Sheet = 2 pages. No fold, no nesting.',()=>SV(R(14,8,62,104,'1')+AR('M82 60H100')+R(106,8,62,104,'2')+R(186,34,40,60)+R(192,28,40,60)+R(198,22,40,60,'1–2',{s:10})+T(212,112,'Stack'))],
+'per':['Signature','Sheets per signature','How many sheets are nested and folded together. Each sheet adds 4 pages in 2-up, or 2 in 1-up. Type any number from 1 to 30.',['You know how thick a stack folds cleanly','You want fewer, thicker signatures'],['You plan by page count: divide pages by 4'],()=>{const k=HC.k,P=k*SP(HC);return `${k} sheets = ${P} pages. Outer sheet: front ${P} | 1, back 2 | ${P-1}.`},()=>{const k=Math.max(1,HC.k);return SV([...Array(Math.min(k,8)).keys()].map(j=>R(18+j*5,14+j*4,64,70)).join('')+T(52,112,'Nested and folded')+`<text x="158" y="62" text-anchor="middle" font-size="28" font-weight="600" fill="var(--acc)">${k}</text>`+T(158,82,'sheets')+T(158,98,'= '+k*SP(HC)+' pages'))}],
+'left:small':['Leftovers','Smaller last signature','The last signature holds only the sheets that remain.',['You accept one thinner signature','You want no wasted paper'],['Every signature must match'],'16 sheets, 6 per signature: 6, 6, 4.',()=>SV(SGD([6,6,4]))],
+'left:merge':['Leftovers','Merge into previous','Remaining sheets join the previous signature, which becomes thicker.',['You dislike thin signatures','A thicker one still folds well'],['Every signature must match'],'16 sheets, 6 per signature: 6, 10.',()=>SV(SGD([6,10]))],
+'left:pad':['Leftovers','Pad to full signature','Blank pages complete the last signature so all signatures are identical.',['Every signature must be identical'],['You want to save paper'],'16 sheets, 6 per signature: 6, 6, 6 (2 blank sheets at the end).',()=>SV(SGD([6,6,4],2))],
+'edge:side':['Printer','Flip like a book','The pile turns around the vertical edge, like a book cover. Left and right swap and the top stays on top. No rotation needed.',['You re-insert the pile like turning a page','This is the default'],['You turn it over the top edge'],'Back pages are drawn upright (WYSIWYG).',()=>SV(FL(0))],
+'edge:top':['Printer','Flip like a calendar','The pile turns over the top edge. Top and bottom swap, so every back is rotated 180° to still read upright.',['You re-insert the pile top to bottom','Your printer is set to short-edge duplex'],['You flip like a book'],'Backs are rotated 180° for you.',()=>SV(FL(1))],
+'rev:0':['Printer','Back in same order','Printers take paper from the top. Flipping the whole pile brings sheet 1 back on top, so backs follow the fronts.',['A test print gives matching sheets','This is the default'],['Your first back lands on the last sheet'],'Front i pairs with back i.',()=>SV(PAIR(0))],
+'rev:1':['Printer','Back in reverse order','Back sheets run from last to first.',['Your printer returns the pile reversed','Test print shows front 1 behind the last back'],['A test print already matches'],'Front i pairs with back N − i + 1.',()=>SV(PAIR(1))],
+'rot0':['Printer','Back upright','Every back shows exactly what you see on screen, with the top of the screen as the top of the sheet.',['Your test print has upright backs'],['Backs come out upside-down'],'No rotation (default).',()=>SV(RT(0))],
+'rot1':['Printer','Back upside-down','Turns every back 180°. A safety switch for printers that behave differently.',['Your test print shows upside-down backs'],['Backs already come out upright'],'Back rotated 180° around the sheet centre.',()=>SV(RT(1))],
+'mode:color':['Finish','Colour','Samples the page colour from inner pages and fills the whole sheet, margins and blanks included.',['Your book has a tinted page','You want a seamless look'],['You print on plain paper to save ink'],'Background = sampled colour (editable below).',()=>SV(R(30,18,70,90,'',{f:'#f0e2bb'})+T(65,122,'Colour')+R(140,18,70,90,'',{f:'#fff'})+T(175,122,'B/W'))],
+'mode:bw':['Finish','Black and white','Plain white background everywhere.',['You print on white paper','You want to save ink'],['Your pages have a coloured background'],'Background = white.',()=>SV(R(30,18,70,90,'',{f:'#f0e2bb'})+T(65,122,'Colour')+R(140,18,70,90,'',{f:'#fff'})+T(175,122,'B/W'))],
+'fold':['Finish','Fold guide line','Draws a faint dashed line where the sheet folds.',['You want help creasing in the right place'],['You want a clean sheet'],'0.4 pt grey dashed line, 3 on 5 off.',()=>SV(R(60,12,120,96,'')+DL(120,12,120,108)+T(120,124,'Fold here'))],
+'tag':['Finish','Signature tag','Prints a tiny label like S2 3/6 F at the bottom fold: signature, sheet, side. It sits inside the fold and helps you re-sort sheets.',['You might mix up sheets','You want to check order after printing'],['You want nothing extra on the page'],'6 pt grey text at the bottom centre.',()=>SV(R(60,12,120,96,'')+DL(120,12,120,100)+`<text x="120" y="104" text-anchor="middle" font-size="8" fill="var(--acc)" font-weight="700">S2  3/6  F</text>`+T(120,124,'Tag at the fold'))],
+'mg':['Finish','Edge margin','Space kept around each page, in millimetres. Type 0 to 10, in steps of 0.5.',['Your printer clips the edges','You want room for trimming'],['You want pages as large as possible'],()=>`${C.mg} mm on every side of each page.`,()=>SV(R(40,10,160,100,'')+`<rect x="56" y="22" width="128" height="76" rx="2" fill="var(--hi)" stroke="var(--acc)" stroke-dasharray="4 3"/>`+AR('M40 60H54')+T(120,64,'page')+T(47,76,C.mg+' mm'))],
+'scope':['Export','Download scope','Build files for the whole book or for one signature, so you can print in batches.',['You print signature by signature','You want smaller files'],['You print everything at once'],'One signature = its own Fronts and Backs.',()=>SV(R(20,20,40,60,'1')+R(70,20,40,60,'2',{f:'var(--ln)'})+R(120,20,40,60,'3')+R(170,20,40,60,'4')+T(90,100,'Pick one, or the whole book'))]};
+let HC=C,ht;function hint(k,cfg=C){HC=cfg;const h=H[k];if(!h)return;const[c,t,w,pk,av,ex,vf]=h,e=$('#hint'),li=a=>a.map(x=>`<li>${x}</li>`).join('');
+e.innerHTML=`<button class="x" aria-label="Close">×</button><span class="pill">${c}</span><h3 style="margin-top:8px">${t}</h3><div id="hv">${vf()}</div><p>${w}</p><section class="sel"><h5>Select this if you…</h5><ul>${li(pk)}</ul></section><section class="not"><h5>Avoid it if you…</h5><ul>${li(av)}</ul></section><section class="prec"><h5>Exactly</h5><div>${typeof ex==='function'?ex():ex}</div></section><div class="bar2"></div>`;
+e.classList.remove('run');void e.offsetWidth;e.classList.add('on','run');clearTimeout(ht);ht=setTimeout(()=>e.classList.remove('on','run'),11000)}
+$('#hint').onclick=e=>{if(e.target.closest('.x'))clH()};
+const hk=(k,c=C)=>k==='rot'?'rot'+(c.rot?1:0):k.includes(':')?k.split(':')[0]+':'+c[k.split(':')[0]]:k;
+const qb=k=>`<button class="q" data-h="${k}" title="Explain">?</button>`,lab=(n,d,k)=>`<span class="lb"><span><b>${n}</b><small>${d}</small></span>${qb(k)}</span>`;
+const sg=(k,o)=>`<div class="seg" data-k="${k}">${o.map(([v,n])=>`<button data-v="${v}">${n}</button>`).join('')}</div>`,sw=k=>`<label class="sw"><input type="checkbox" data-s="${k}"><span></span></label>`,nm=k=>`<div class="num"><button data-n="${k}" data-d="-1">−</button><input inputmode="decimal" data-i="${k}" aria-label="${k}"><button data-n="${k}" data-d="1">+</button></div>`;
+const rw=(n,d,k,c)=>`<div class="row">${lab(n,d,k)}${c}</div>`;
+$('#p-lay').innerHTML=rw('Layout','How pages sit on each sheet','lay:two',sg('lay',[['two','2-up'],['fold','Folded'],['flat','Flat']]))+rw('Sheets per signature','Type a number or use + and −','per',nm('k'))+rw('Leftover sheets','When sheets do not divide evenly','left:small',sg('left',[['small','Smaller'],['merge','Merge'],['pad','Pad']]));
+$('#p-prt').innerHTML=rw('Flip the pile','How you turn paper for the backs','edge:side',sg('edge',[['side','Book'],['top','Calendar']]))+rw('Back order','Order the backs are printed in','rev:0',sg('rev',[[0,'Same'],[1,'Reverse']]))+rw('Back upside-down','Safety switch, off by default','rot',sw('rot'));
+const PRE=[[240,226,187],[250,244,226],[255,255,255],[253,232,240],[235,235,235]];$('#p-fin').innerHTML=rw('Colour','Keep the page background or print white','mode:color',sg('mode',[['color','Colour'],['bw','B/W']]))+rw('Fold guide line','Dashed line at the fold','fold',sw('fold'))+rw('Signature tag','Tiny sheet label at the fold','tag',sw('tag'))+rw('Edge margin (mm)','Type 0 to 10','mg',nm('mg'))+`<div class="row"><span class="lb"><span><b>Page background</b><small>Detected from inner pages</small></span></span><div class="sws">${PRE.map((c,i)=>`<button data-c="${i}" style="background:rgb(${c})" title="rgb(${c})"></button>`).join('')}<label class="swc">+<input type="color" id="bgc"></label></div></div>`;
+const NU={k:[1,30,1],mg:[0,10,.5]},hex=c=>'#'+c.map(v=>v.toString(16).padStart(2,'0')).join('');
+$$('.q').forEach(b=>b.onclick=e=>{e.preventDefault();e.stopPropagation();hint(hk(b.dataset.h))});
+$$('.seg[data-k]').forEach(s=>s.onclick=e=>{const b=e.target.closest('button');if(!b)return;const k=s.dataset.k;C[k]=isNaN(+b.dataset.v)?b.dataset.v:+b.dataset.v;sv();hint(hk(k+':'));render()});
+$$('[data-s]').forEach(i=>i.onchange=()=>{C[i.dataset.s]=i.checked?1:0;sv();hint(hk(i.dataset.s));render()});
+$$('[data-n]').forEach(b=>b.onclick=()=>{const k=b.dataset.n,[lo,hi,st]=NU[k];C[k]=Math.max(lo,Math.min(hi,Math.round((C[k]+ +b.dataset.d*st)/st)*st));sv();hint(k==='k'?'per':k);render()});
+$$('[data-i]').forEach(i=>{const k=i.dataset.i,[lo,hi,st]=NU[k];i.oninput=()=>{i.value=i.value.replace(k==='k'?/\D/g:/[^\d.]/g,'');const v=parseFloat(i.value);if(v>=lo&&v<=hi){C[k]=Math.round(v/st)*st;sv();live();stats()}};i.onfocus=()=>i.select();i.onchange=()=>{const v=parseFloat(i.value);C[k]=Math.max(lo,Math.min(hi,isNaN(v)?C[k]:Math.round(v/st)*st));sv();hint(k==='k'?'per':k);render()}});
+$('#bgc').oninput=e=>{S.bg=[1,3,5].map(i=>parseInt(e.target.value.substr(i,2),16));render()};
+$$('#tabs button').forEach(b=>b.onclick=()=>{$$('#tabs button').forEach(x=>x.classList.toggle('on',x===b));$$('.panel').forEach(p=>p.classList.toggle('on',p.id==='p-'+b.dataset.p))});
+function stats(){const z=plan(S.N),sh=z.reduce((a,b)=>a+b,0),has=!!S.N;
+$('#stats').innerHTML=[['Pages',S.N],['Sheets',sh],['Signatures',z.length],['Blank',has?sh*SP()-S.N:0]].map(x=>`<div class="stat g"><b>${x[1]}</b><small>${x[0]}</small></div>`).join('');
+$('#info').textContent=has?`${z.length} signature${z.length>1?'s':''}: ${z.slice(0,8).join(' + ')}${z.length>8?' …':''} sheets. ${SP()} pages per sheet.`:'Upload a PDF to begin.'}
+function live(){const k=Math.max(1,C.k),two=C.lay==='two',s=sheets([k])[0],cell=(a,x0)=>a.map((n,j)=>R(x0+j*(two?48:0),14,two?48:70,64,n+1,{s:13})).join(''),P=k*SP();
+$('#live').innerHTML=`<b style="font-size:14px">Live layout</b><span class="sub" style="color:var(--mut);font-size:12px">Outermost sheet of a ${k}-sheet signature (${P} pages)</span><div id="hv">${SV(cell(s.f,two?20:30)+T(two?68:65,96,'Front')+AR('M120 50H138')+cell(s.b,two?142:168)+T(two?190:203,96,'Back')+T(120,122,C.edge==='side'?'Flip like a book':'Flip like a calendar'))}</div><span style="color:var(--mut);font-size:12px">${C.lay==='two'?'Fold in half and nest all '+k+' sheets.':C.lay==='fold'?'Fold each sheet along the dashed line.':'Stack sheets flat in order.'}</span>`}
+function render(){const z=plan(S.N),has=!!S.N,key=S.name+'|'+S.N+'|'+C.lay+C.k+C.left;
+if(A.k!==key){A={k:key,d:{}};svA()}
+$$('.seg[data-k]').forEach(s=>s.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.v==String(C[s.dataset.k]))));
+$$('[data-s]').forEach(i=>i.checked=!!C[i.dataset.s]);$$('[data-i]').forEach(i=>{if(document.activeElement!==i)i.value=C[i.dataset.i]});$('#bgc').value=hex(S.bg);
+stats();live();swr();psgr();
+if(sgSel>=z.length)sgSel=-1;dd($('#sg'),[[-1,'Whole book'],...z.map((k,i)=>[i,`Signature ${i+1} (${k} sheets)`])],sgSel,v=>{sgSel=+v});
+$$('#p-exp .btn').forEach(b=>{b.disabled=!has&&b.id!=='dT'});
+$('#chip').textContent=has?`${S.name} · ${S.N} pp`:'No PDF yet';
+$('#card').classList.toggle('top',C.edge==='top');$('#bk').classList.toggle('rot',!!C.rot);
+if(view==='prev')sched();if(view==='asm')asm()}
+const og=()=>sgSel<0?{}:{only:sgSel};
+$('#dF').onclick=()=>dl('f',og());$('#dB').onclick=()=>dl('b',og());$('#dX').onclick=()=>dl('x',og());$('#dZ').onclick=dlZip;$('#dT').onclick=async()=>{await dl('f',{test:1});await dl('b',{test:1})};
+/* ---- load ---- */
+async function load(f){if(!f)return;$('#fsub').textContent='Reading…';
+try{const bytes=new Uint8Array(await f.arrayBuffer());S.doc=await PDFLib.PDFDocument.load(bytes,{ignoreEncryption:true});S.bytes=bytes;S.name=f.name;S.N=S.doc.getPageCount();S.pj=null;BM.clear();S.bg=[255,255,255];
+try{S.pj=await pdfjsLib.getDocument({data:bytes.slice()}).promise;const idx=[2,3,4,5,6].filter(i=>i<=S.pj.numPages);if(!idx.length)idx.push(1);const cnt={};for(const i of idx){const pg=await S.pj.getPage(i),vp=pg.getViewport({scale:.3}),cv=document.createElement('canvas');cv.width=vp.width;cv.height=vp.height;const x=cv.getContext('2d',{willReadFrequently:true});await pg.render({canvasContext:x,viewport:vp}).promise;const p=x.getImageData(3,3,1,1).data,k=[p[0],p[1],p[2]].join();cnt[k]=(cnt[k]||0)+1}S.bg=Object.entries(cnt).sort((a,b)=>b[1]-a[1])[0][0].split(',').map(Number)}catch(e){S.pj=null}
+$('#drop').classList.add('ok');$('#fsub').textContent=f.name+' · '+S.N+' pages';pi=0;sgSel=-1;render();toast(S.N+' pages loaded')}
+catch(e){console.error(e);$('#fsub').textContent='Could not read that PDF. Try another file.'}}
+const dr=$('#drop');$('#file').onchange=e=>load(e.target.files[0]);dr.ondragover=e=>{e.preventDefault();dr.classList.add('ov')};dr.ondragleave=()=>dr.classList.remove('ov');dr.ondrop=e=>{e.preventDefault();dr.classList.remove('ov');load(e.dataTransfer.files[0])};
+/* ---- preview ---- */
+const BM=new Map(),T0={f:null,b:null,fn:0,bn:0,ar:.707};let pm='sheet',psig=0,src='book',Z=1,TK=0,PWc=300,pst;const card=$('#card');
+const tN=()=>T0.f&&T0.b?Math.min(T0.fn,T0.bn):Math.max(T0.fn,T0.bn),cfg=()=>src==='test'?TC:C,NN=()=>src==='test'?tN()*SP(TC):S.N;
+const nS=()=>pm==='sheet'?(src==='test'?tN():sheets(plan(S.N)).length):spCount();
+function spInfo(){const c=cfg(),z=plan(NN(),c),sp=SP(c);let b=0,t=0;if(pm==='sig'){const s=Math.min(psig,z.length-1);for(let i=0;i<s;i++)b+=z[i]*sp;t=(z[s]||0)*sp}else t=z.reduce((a,x)=>a+x,0)*sp;return{z,sp,b,t}}
+const spCount=()=>NN()?spInfo().t/2+1:0;
+const ratio=()=>src==='test'?(pm==='sheet'?T0.ar:2*T0.ar/(TC.lay==='two'?2:1)):((pm!=='sheet'||C.lay==='two')?2:1)/1.4142,PHc=()=>Math.round(PWc*1.4142);
+function setPW(){fit();const cw=parseFloat(card.style.width)||600,p=Math.round(Math.min(1400,Math.max(240,cw*Math.max(devicePixelRatio||1,1.5)/(ratio()*1.4142))));if(p!==PWc){PWc=p;BM.clear()}}
+async function bmp(doc,n,full){if(!doc||n<0||n>=doc.numPages)return null;const key=(doc===S.pj?'b':doc===T0.f?'f':'k')+(full?'F':'')+n+'@'+PWc;if(BM.has(key))return BM.get(key);const pg=await doc.getPage(n+1),v=pg.getViewport({scale:1}),sc=Math.min((full?Math.round(PHc()*ratio()):PWc)/v.width,PHc()/v.height),vp=pg.getViewport({scale:sc}),c=document.createElement('canvas');c.width=Math.ceil(vp.width);c.height=Math.ceil(vp.height);await pg.render({canvasContext:c.getContext('2d'),viewport:vp}).promise;BM.set(key,c);if(BM.size>(PWc>900?8:20))BM.delete(BM.keys().next().value);return c}
+async function slotBmp(r){if(!r.d||r.n<0||r.n>=r.d.numPages)return null;const kk='S'+(r.d===T0.f?'f':'b')+r.n+(r.rot?'r':'')+'@'+PWc+'/'+r.m+'/'+r.j;if(BM.has(kk))return BM.get(kk);const sk='D'+(r.d===T0.f?'f':'b')+r.n+(r.rot?'r':'')+'@'+PWc+'/'+r.m;let sd=BM.get(sk);if(!sd){const pg=await r.d.getPage(r.n+1),v=pg.getViewport({scale:1}),sc=Math.min(r.m*PWc/v.width,PHc()/v.height),vp=pg.getViewport({scale:sc}),c=document.createElement('canvas');c.width=Math.ceil(vp.width);c.height=Math.ceil(vp.height);await pg.render({canvasContext:c.getContext('2d'),viewport:vp}).promise;sd=c;if(r.rot){const q=document.createElement('canvas');q.width=c.width;q.height=c.height;const x=q.getContext('2d');x.translate(c.width,c.height);x.rotate(Math.PI);x.drawImage(c,0,0);sd=q}BM.set(sk,sd)}const w=Math.floor(sd.width/r.m),o=document.createElement('canvas');o.width=w;o.height=sd.height;o.getContext('2d').drawImage(sd,r.j*w,0,w,sd.height,0,0,w,sd.height);BM.set(kk,o);if(BM.size>(PWc>900?10:40))BM.delete(BM.keys().next().value);return o}
+function tRefs(){const c=TC,z=plan(NN(),c),L=sheets(z,c),n=tN(),m=c.lay==='two'?2:1,M=new Map();L.forEach((x,i)=>{const bi=c.rev?n-1-i:i;x.f.forEach((v,j)=>M.set(v,{d:T0.f,n:i,j,m,rot:0}));x.b.forEach((v,j)=>M.set(v,{d:T0.b,n:bi,j,m,rot:c.rot?1:0}))});return M}
+async function paint(cv,items,my,full,c=C){const m=items.length,w=full?Math.round(PHc()*ratio()):PWc*m,h=PHc(),x=cv.getContext('2d');const draws=[];for(const[doc,n]of items)draws.push(doc&&doc.slot?await slotBmp(doc):await bmp(doc,n,full));if(my!==TK)return;
+cv.width=w;cv.height=h;x.imageSmoothingQuality='high';x.fillStyle=(full||src==='test')?'#fff':C.mode==='color'?`rgb(${S.bg})`:'#fff';x.fillRect(0,0,w,h);const cw=w/m;
+draws.forEach((b,j)=>{if(b)x.drawImage(b,j*cw+(cw-b.width)/2,(h-b.height)/2);else if(items[j][1]!==-1){x.fillStyle='rgba(190,60,110,.35)';x.font='600 36px sans-serif';x.textAlign='center';x.fillText('blank',j*cw+cw/2,h/2)}});
+if(pm!=='sheet'){const g=x.createLinearGradient(w/2-w*.03,0,w/2+w*.03,0);g.addColorStop(0,'rgba(0,0,0,0)');g.addColorStop(.5,'rgba(60,20,40,.22)');g.addColorStop(1,'rgba(0,0,0,0)');x.fillStyle=g;x.fillRect(w/2-w*.03,0,w*.06,h)}else if(c.fold&&c.lay!=='flat'){x.strokeStyle='rgba(214,51,108,.5)';x.setLineDash([6,6]);x.beginPath();if(c.lay==='two'){x.moveTo(w/2,0);x.lineTo(w/2,h)}else{x.moveTo(0,h/2);x.lineTo(w,h/2)}x.stroke()}}
+function fit(){const s=$('#stage'),r=ratio(),w=s.clientWidth-16,h=s.clientHeight-16,cw=Math.max(80,Math.min(w,h*r))*Z;card.style.width=cw+'px';card.style.height=cw/r+'px';$('#zl').textContent=Math.round(Z*100)+'%'}
+const sched=()=>{clearTimeout(pst);pst=setTimeout(drawPrev,40)};
+async function drawPrev(){const my=++TK,test=src==='test',n=nS(),tg=$('#ptag'),fl=card.classList.contains('flip');setPW();$('#fl').disabled=pm!=='sheet';psgr();
+if(!n){tg.textContent=test?'Load a front and a back PDF':'Upload a book on Prepare';$('#rg').max=1;$('#pv').disabled=$('#nx').disabled=true;fit();return}
+pi=Math.min(pi,n-1);$('#rg').max=n;$('#rg').value=pi+1;$('#pv').disabled=pi<1;$('#nx').disabled=pi>=n-1;$('#fl').classList.toggle('act',fl);fit();
+if(test&&pm==='sheet'){const z=plan(n*SP(TC),TC),x=sheets(z,TC)[pi],pp=TC.tag?` · pp ${(fl?x.b:x.f).map(v=>v+1).join(' | ')}`:'';tg.textContent=`Sig ${x.s+1} · sheet ${x.i+1}/${z[x.s]} · ${fl?'Back':'Front'}${pp}`;const bi=TC.rev?n-1-pi:pi;card.classList.toggle('top',TC.edge==='top');$('#bk').classList.toggle('rot',!!TC.rot);await Promise.all([paint($('#cf'),[[T0.f,pi]],my,1,TC),paint($('#cb'),[[T0.b,bi]],my,1,TC)]);return}
+if(!test&&!S.pj){tg.textContent='Preview needs pdf.js (check your connection)';return}
+if(pm!=='sheet'){const{z,sp,b,t}=spInfo(),l=2*pi-1,r=2*pi,g=v=>v<0||v>=t?-1:b+v,gl=g(l),gr=g(r),lb=v=>v<0||v>=NN()?'–':v+1,ref=gr>=0?gr:gl,TM=test?tRefs():null,it=v=>v<0?[null,-1]:test?[Object.assign({slot:1},TM.get(v)||{}),0]:[S.pj,v];let acc=0,sg=0;for(let i=0;i<z.length;i++){acc+=z[i]*sp;if(ref<acc){sg=i;break}}
+tg.textContent=`${test?'Test · ':''}${pm==='sig'?'':'Book · '}Sig ${(pm==='sig'?psig:sg)+1} · spread ${pi+1}/${n} · pp ${lb(gl)} | ${lb(gr)}`;card.classList.remove('flip');await paint($('#cf'),[it(gl),it(gr)],my);return}
+const L=sheets(plan(S.N)),x=L[pi],z=plan(S.N),pp=(fl?x.b:x.f).map(v=>v>=S.N?'–':v+1).join(' | ');tg.textContent=`Sig ${x.s+1} · sheet ${x.i+1}/${z[x.s]} · ${fl?'Back':'Front'} · pp ${pp}`;
+await Promise.all([paint($('#cf'),x.f.map(v=>[S.pj,v]),my),paint($('#cb'),x.b.map(v=>[S.pj,v]),my)])}
+const stp=d=>{const o=pi;pi=Math.max(0,Math.min(nS()-1,pi+d));if(pi!==o)$('#wrap').animate([{opacity:.35,transform:`translateX(${d*22}px)`},{opacity:1,transform:'none'}],{duration:260,easing:'cubic-bezier(.2,.8,.2,1)'});sched()};$('#pv').onclick=()=>stp(-1);$('#nx').onclick=()=>stp(1);$('#rg').oninput=e=>{pi=+e.target.value-1;sched()};$('#fl').onclick=()=>{card.classList.toggle('flip');sched()};
+function setZ(z){Z=Math.min(4,Math.max(.5,Math.round(z*100)/100));fit();sched()}
+$('#zi').onclick=()=>setZ(Z*1.25);$('#zo').onclick=()=>setZ(Z/1.25);$('#zf').onclick=()=>setZ(1);$('#stage').addEventListener('wheel',e=>{if(e.ctrlKey||e.metaKey){e.preventDefault();setZ(Z*(e.deltaY<0?1.1:.9))}},{passive:false});
+function psgr(){const z=plan(NN(),cfg()),el=$('#psg');if(!z.length){el.innerHTML='';el._k='';return}psig=Math.min(psig,z.length-1);const kk=src+'|'+z.join()+'|'+psig;if(el._k===kk)return;el._k=kk;dd(el,z.map((k,i)=>[i,`Signature ${i+1} (${k} sheets)`]),psig,v=>{psig=+v;pi=0;sched()})}
+$$('#pm button').forEach(b=>b.onclick=()=>{pm=b.dataset.v;$$('#pm button').forEach(x=>x.classList.toggle('on',x===b));$('#pbar').classList.toggle('m-sig',pm==='sig');pi=0;card.classList.remove('flip');psgr();sched()});
+$$('#src button').forEach(b=>b.onclick=()=>{src=b.dataset.v;$$('#src button').forEach(x=>x.classList.toggle('on',x===b));$('#pbar').classList.toggle('tst',src==='test');pi=0;card.classList.remove('flip');setDr(0);BM.clear();render()});
+[['tf','f'],['tb','b']].forEach(([id,k])=>$('#'+id+' input').onchange=async e=>{const f=e.target.files[0];if(!f)return;const sp=$('#'+id+' span');sp.textContent='Reading…';try{const d=await pdfjsLib.getDocument({data:new Uint8Array(await f.arrayBuffer())}).promise;T0[k]=d;T0[k+'n']=d.numPages;if(k==='f'||!T0.f){const v=(await d.getPage(1)).getViewport({scale:1});T0.ar=v.width/v.height}sp.textContent=f.name.slice(0,16)+' · '+d.numPages;BM.clear();pi=0;sched()}catch(x){sp.textContent='Could not read PDF'}});
+addEventListener('resize',()=>{if(view==='prev')fit()});addEventListener('keydown',e=>{if(view!=='prev'||e.target.tagName==='INPUT')return;if(e.key==='ArrowRight')stp(1);if(e.key==='ArrowLeft')stp(-1)});
+/* ---- custom dropdown, swatches, test settings ---- */
+function dd(el,items,val,cb){const cur=items.find(i=>i[0]==val)||items[0];el.classList.remove('open');el.innerHTML=`<button class="ddb"><span>${cur[1]}</span><svg class="i" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></button><div class="ddl">${items.map(([v,n])=>`<button data-v="${v}" class="${v==val?'on':''}">${n}</button>`).join('')}</div>`;
+el.onclick=e=>{const b=e.target.closest('button');if(!b)return;e.stopPropagation();if(b.classList.contains('ddb')){const o=!el.classList.contains('open');$$('.dd.open').forEach(x=>x.classList.remove('open'));el.classList.toggle('open',o)}else{cb(b.dataset.v);dd(el,items,b.dataset.v,cb)}}}
+document.addEventListener('click',()=>$$('.dd.open').forEach(x=>x.classList.remove('open')));
+function swr(){$$('#p-fin [data-c]').forEach(b=>b.classList.toggle('on',PRE[+b.dataset.c].join()===S.bg.join()))}
+$$('#p-fin [data-c]').forEach(b=>b.onclick=()=>{S.bg=[...PRE[+b.dataset.c]];render()});
+const TC={lay:'two',k:6,left:'small',edge:'side',rev:0,rot:0,fold:0,tag:1};try{Object.assign(TC,JSON.parse(localStorage.getItem('eth-tc')||'{}'))}catch(e){}
+H.ptag=['Preview','Expected page numbers','Shows which book pages the standard formula puts on this sheet side, so you can compare them with what your PDF really shows.',['You test a PDF imposed elsewhere','You want to verify page order'],['You only want to look at the sheets'],'Outer sheet of a 4-page signature: front 4 | 1, back 2 | 3.',()=>SV(R(30,16,70,70,'4 | 1',{s:14})+T(65,102,'Front')+R(140,16,70,70,'2 | 3',{s:14})+T(175,102,'Back'))];
+const tlab=(n,d,k)=>`<span class="lb"><span><b>${n}</b><small>${d}</small></span><button class="q" data-th="${k}" title="Explain">?</button></span>`,
+tsg=(k,o)=>`<div class="seg" data-tk="${k}">${o.map(([v,n])=>`<button data-v="${v}">${n}</button>`).join('')}</div>`,tsw=k=>`<label class="sw"><input type="checkbox" data-ts="${k}"><span></span></label>`,
+tnm=k=>`<div class="num"><button data-tn="${k}" data-d="-1">−</button><input inputmode="numeric" data-ti="${k}" aria-label="${k}"><button data-tn="${k}" data-d="1">+</button></div>`,trw=(n,d,k,c)=>`<div class="row">${tlab(n,d,k)}${c}</div>`;
+$('#t-lay').innerHTML=trw('Layout','How the test pages are arranged','lay:two',tsg('lay',[['two','2-up'],['fold','Folded'],['flat','Flat']]))+trw('Sheets per signature','Groups sheets for the tag','per',tnm('k'))+trw('Leftover sheets','Last signature handling','left:small',tsg('left',[['small','Smaller'],['merge','Merge'],['pad','Pad']]));
+$('#t-prt').innerHTML=trw('Flip the pile','How the backs were turned','edge:side',tsg('edge',[['side','Book'],['top','Calendar']]))+trw('Back order','Order of the back PDF','rev:0',tsg('rev',[[0,'Same'],[1,'Reverse']]))+trw('Back upside-down','Rotate every back 180°','rot',tsw('rot'));
+$('#t-oth').innerHTML=trw('Fold guide line','Dashed line on the preview','fold',tsw('fold'))+trw('Expected page numbers','Show formula numbers in the tag','ptag',tsw('tag'));
+const tui=()=>{try{localStorage.setItem('eth-tc',JSON.stringify(TC))}catch(e){}$$('[data-tk]').forEach(s=>s.querySelectorAll('button').forEach(b=>b.classList.toggle('on',b.dataset.v==String(TC[s.dataset.tk]))));$$('[data-ts]').forEach(i=>i.checked=!!TC[i.dataset.ts]);$$('[data-ti]').forEach(i=>{if(document.activeElement!==i)i.value=TC[i.dataset.ti]})},tr=()=>{tui();sched()};
+$$('[data-th]').forEach(b=>b.onclick=e=>{e.stopPropagation();const k=b.dataset.th;hint(k==='ptag'?k:hk(k,TC),TC)});
+$$('[data-tk]').forEach(s=>s.onclick=e=>{const b=e.target.closest('button');if(!b)return;const k=s.dataset.tk;TC[k]=isNaN(+b.dataset.v)?b.dataset.v:+b.dataset.v;hint(hk(k+':',TC),TC);tr()});
+$$('[data-ts]').forEach(i=>i.onchange=()=>{const k=i.dataset.ts;TC[k]=i.checked?1:0;hint(k==='tag'?'ptag':hk(k,TC),TC);tr()});
+$$('[data-tn]').forEach(b=>b.onclick=()=>{TC.k=Math.max(1,Math.min(30,TC.k+ +b.dataset.d));hint('per',TC);tr()});
+$$('[data-ti]').forEach(i=>{i.onfocus=()=>i.select();i.oninput=()=>{i.value=i.value.replace(/\D/g,'');const v=+i.value;if(v>=1&&v<=30){TC.k=v;sched()}};i.onchange=()=>{TC.k=Math.max(1,Math.min(30,+i.value||TC.k));hint('per',TC);tr()}});
+$$('#ttabs button').forEach(b=>b.onclick=()=>{$$('#ttabs button').forEach(x=>x.classList.toggle('on',x===b));$$('.tpanel').forEach(p=>p.classList.toggle('on',p.id===b.dataset.p))});
+function setDr(on){$('#tdrawer').classList.toggle('on',!!on);$('#tcfg').classList.toggle('act',!!on)}
+const clH=()=>{$('#hint').classList.remove('on','run');clearTimeout(ht)};
+$('#tcfg').onclick=e=>{e.stopPropagation();setDr(!$('#tdrawer').classList.contains('on'))};$('#tx').onclick=$('#tdone').onclick=()=>setDr(0);
+$('#trs').onclick=()=>{Object.assign(TC,{lay:'two',k:6,left:'small',edge:'side',rev:0,rot:0,fold:0,tag:1});clH();tr()};
+/* dismiss tooltips and the settings popover when clicking elsewhere */
+document.addEventListener('pointerdown',e=>{const t=e.target;if(!t.closest)return;
+if($('#hint').classList.contains('on')&&!t.closest('#hint,.q,[data-h],[data-th],[data-k],[data-s],[data-i],[data-tk],[data-ts],[data-tn],[data-ti]'))clH();
+if($('#tdrawer').classList.contains('on')&&!t.closest('#tdrawer,#tcfg,#hint,.ddl'))setDr(0)},true);
+addEventListener('keydown',e=>{if(e.key==='Escape'){clH();setDr(0);$$('.dd.open').forEach(x=>x.classList.remove('open'))}});
+/* auto-hiding scrollbars: show while scrolling, hide shortly after */
+document.addEventListener('scroll',e=>{const t=e.target;if(!t||t.nodeType!==1)return;t.classList.add('sbv');clearTimeout(t._sb);t._sb=setTimeout(()=>t.classList.remove('sbv'),900)},true);
+tui();
+/* ---- assemble ---- */
+let as=-1;const CK='<svg viewBox="0 0 24 24" class="i"><path d="M5 12l5 5 9-10"/></svg>';
+function asm(){const z=plan(S.N),el=$('#asm')||0;const box=$('#v-asm');if(!S.N){box.innerHTML='<p class="empty">Upload a PDF on Prepare first. Your checklist appears here.</p>';return}
+as=Math.min(as,z.length-1);const two=C.lay==='two',book=C.edge==='side',pg=two?'A4 landscape':'A4 portrait';
+const G0=[['g1','Print the fronts',`Open the Fronts PDF. Use ${pg}, scale 100%, no auto-fit, one side only. Keep the printed pile in order.`],['g2','Print the backs',`Put the same pile back, flipped ${book?'like a book (around the vertical edge)':'like a calendar (over the top edge)'}, then print the Backs PDF.`],['g3','Check the first sheet','Page 1 and page 2 must sit on opposite sides of the same sheet, both upright. If not, run the printer test and adjust the Printer settings.']];
+const P=[];let sh0=0;z.forEach((k,s)=>{const a=sh0+1,b=sh0+k,st=[['a','Separate the sheets',`Take sheets ${a} to ${b} from the pile and keep their order.${C.tag?` Look for the S${s+1} tag at the fold.`:''}`],['b',two?'Nest the sheets':'Stack the sheets',two?`Sheet ${a} goes outermost, sheet ${b} innermost. Tap the edges even.`:`Sheet ${a} on top, in order. Tap the edges even.`]];if(C.lay!=='flat')st.push(['c','Fold in half',two?'Fold the nested stack along the centre line and press the crease with a ruler edge.':'Fold each sheet along the dashed line and press the crease.']);st.push(['d','Set it aside',`Mark this signature ${s+1} of ${z.length} lightly in pencil and place it on the finished stack.`]);P.push({s,st});sh0+=k});
+const all=[...G0.map(x=>x[0]),...P.flatMap(p=>p.st.map(t=>`${p.s}${t[0]}`))],dn=all.filter(k=>A.d[k]).length,sd=p=>p.st.every(t=>A.d[`${p.s}${t[0]}`]),ro=(k,t,d)=>`<div class="st g${A.d[k]?' dn':''}" data-k="${k}"><span class="ck">${CK}</span><div><b>${t}</b><p>${d}</p></div></div>`,gd=G0.every(x=>A.d[x[0]]);
+box.innerHTML=`<div class="wrapw"><div class="grp g"><div class="row"><b>${dn===all.length?'All signatures folded and ready':'Progress'}</b><span style="color:var(--mut);font-size:12px">${dn} / ${all.length}</span></div><div class="pg"><i style="width:${dn/all.length*100}%"></i></div><div class="row"><span style="color:var(--mut);font-size:12px">Ends with every signature folded and separate.</span><button class="btn o" id="rs" style="height:32px">Reset</button></div></div>
+<div class="chips"><button data-sg="-1" class="${as<0?'on ':''}${gd?'dn':''}">Printing</button>${P.map(p=>`<button data-sg="${p.s}" class="${p.s===as?'on ':''}${sd(p)?'dn':''}">Signature ${p.s+1}</button>`).join('')}</div>
+<div style="display:flex;flex-direction:column;gap:8px">${as<0?G0.map(x=>ro(x[0],x[1],x[2])).join(''):P[as].st.map(t=>ro(`${as}${t[0]}`,t[1],t[2])).join('')}</div></div>`;
+box.onclick=e=>{const c=e.target.closest('.st'),s=e.target.closest('[data-sg]');if(c){const k=c.dataset.k;A.d[k]=!A.d[k];svA();asm()}else if(s){as=+s.dataset.sg;asm()}else if(e.target.closest('#rs')){A.d={};svA();asm()}}}
+/* ---- nav + theme ---- */
+function go(v){view=v;document.body.dataset.v=v;$$('.view').forEach(e=>e.classList.toggle('on',e.id==='v-'+v));$$('nav button').forEach(b=>b.classList.toggle('on',b.dataset.v===v));if(v==='prev')setTimeout(drawPrev,60);if(v==='asm')asm()}
+$$('nav button').forEach(b=>b.onclick=()=>go(b.dataset.v));
+$('#th').onclick=()=>{const r=document.documentElement,d=r.dataset.theme==='dark'||(!r.dataset.theme&&matchMedia('(prefers-color-scheme:dark)').matches)?'light':'dark';r.dataset.theme=d;try{localStorage.setItem('eth-t',d)}catch(e){}};
+render();setTimeout(()=>{try{if(!selfTest()){const c=$('#chip');c.textContent='Layout self-check failed';c.classList.add('w')}}catch(e){}},900);
+</script></body></html>

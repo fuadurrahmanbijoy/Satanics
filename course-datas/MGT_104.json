@@ -1,0 +1,962 @@
+{
+  "clos": [
+    {
+      "title": "Introduction",
+      "statement": "Understand basic nature and scope of economics and to differentiate micro and macroeconomics.",
+      "topics": [
+        {
+          "title": "Nature and Scope of Economics"
+        },
+        {
+          "title": "Economic Law"
+        },
+        {
+          "title": "Normative and Positive Economics"
+        },
+        {
+          "title": "Utility"
+        },
+        {
+          "title": "Law of Diminishing Marginal Utility"
+        }
+      ]
+    },
+    {
+      "title": "Theory of Demand",
+      "statement": "Explain theory of demand and to measure elasticity of demand.",
+      "topics": [
+        {
+          "title": "Demand Curves"
+        },
+        {
+          "title": "Elasticity of Demand"
+        },
+        {
+          "title": "Consumption"
+        },
+        {
+          "title": "Consumers' Surplus"
+        },
+        {
+          "title": "Indifference Curve Analysis"
+        }
+      ]
+    },
+    {
+      "title": "Theory of Supply",
+      "statement": "Explain theory of supply and to measure elasticity of supply.",
+      "topics": [
+        {
+          "title": "Supply Curves"
+        },
+        {
+          "title": "Elasticity of Supply and Its Measurement"
+        },
+        {
+          "title": "Exceptional Supply Curve"
+        }
+      ]
+    },
+    {
+      "title": "Theory of Production and Cost",
+      "statement": "Analyze production function and to explain various concepts of cost.",
+      "topics": [
+        {
+          "title": "Production Function"
+        },
+        {
+          "title": "Diminishing Returns"
+        },
+        {
+          "title": "Returns to Scale"
+        },
+        {
+          "title": "Cost of Production"
+        },
+        {
+          "title": "Various Economic Concepts of Cost"
+        },
+        {
+          "title": "Long Run and Short Run Cost Curves"
+        },
+        {
+          "title": "Measurement of Opportunity Cost"
+        },
+        {
+          "title": "Least Cost Combination"
+        }
+      ]
+    },
+    {
+      "title": "Theory of Firm",
+      "statement": "Analyze different market structure and explain how equilibrium is determined at each market.",
+      "topics": [
+        {
+          "title": "Market Structure"
+        },
+        {
+          "title": "Equilibrium of Firm and Industry"
+        },
+        {
+          "title": "Price Determination under Different Market Conditions"
+        }
+      ]
+    },
+    {
+      "title": "Theory of Distribution",
+      "statement": "Know concepts of rent, wages, interest and profit and the methods of their determination.",
+      "topics": [
+        {
+          "title": "Rent"
+        },
+        {
+          "title": "Wages"
+        },
+        {
+          "title": "Interest"
+        },
+        {
+          "title": "Profit"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What are economics and micro economics?"
+        },
+        {
+          "marks": 4,
+          "title": "Differentiate between micro and macroeconomics."
+        },
+        {
+          "marks": 10,
+          "title": "Discuss the scope of microeconomics."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "Explain the terms utility, total utility and marginal utility."
+        },
+        {
+          "marks": 7,
+          "title": "Discuss the law of diminishing marginal utility."
+        },
+        {
+          "marks": 7,
+          "title": "Describe the limitations of law of diminishing marginal utility."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5.5,
+          "title": "Explain the law of supply with suitable examples."
+        },
+        {
+          "marks": 6,
+          "title": "What are the major determinants of supply? Discuss in Brief."
+        },
+        {
+          "marks": 6,
+          "title": "Discuss the exceptions to the law supply with examples."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is monopolistic competition?"
+        },
+        {
+          "marks": 6,
+          "title": "\"Product differentiation is a typical feature of monopolistic competition.\" Explain."
+        },
+        {
+          "marks": 9,
+          "title": "Describe the theory of monopolistic competition."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What do you mean by market in economics? Explain."
+        },
+        {
+          "marks": 8,
+          "title": "How would you determine price under different market conditions? Discuss."
+        },
+        {
+          "marks": 6,
+          "title": "Do you think lower pricing of a product is always good? Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "Elasticity of supply"
+        },
+        {
+          "marks": 3.5,
+          "title": "Rent"
+        },
+        {
+          "marks": 3.5,
+          "title": "Wages"
+        },
+        {
+          "marks": 3.5,
+          "title": "Interest"
+        },
+        {
+          "marks": 3.5,
+          "title": "Profit"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "Define economics."
+        },
+        {
+          "marks": 5.0,
+          "title": "Differentiates between microeconomics and macroeconomics."
+        },
+        {
+          "marks": 5.0,
+          "title": "Explain the basic problems faced by economic organization."
+        },
+        {
+          "marks": 5.0,
+          "title": "Is economics a science or an art? Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.0,
+          "title": "What do you mean by elasticity of demand?"
+        },
+        {
+          "marks": 8.5,
+          "title": "Discuss the various types of elasticity of demand."
+        },
+        {
+          "marks": 6.0,
+          "title": "Explain price elasticity of demand, income elasticity of demand, cross price elasticity of demand."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.0,
+          "title": "What is a competitive market? Briefly describe the types of markets other than perfectly competitive markets."
+        },
+        {
+          "marks": 4.5,
+          "title": "Define the equilibrium of a market. Describe the forces that move a market toward its equilibrium."
+        },
+        {
+          "marks": 10,
+          "title": "Graph the curves; find equilibrium price/quantity; describe adjustment forces above/below equilibrium."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is the production function?"
+        },
+        {
+          "marks": 5.0,
+          "title": "Discuss the various types of economic costs."
+        },
+        {
+          "marks": 5.0,
+          "title": "What are long-run and short-run cost curves?"
+        },
+        {
+          "marks": 5.0,
+          "title": "Explain the concept of least-cost combination."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "Define market structure."
+        },
+        {
+          "marks": 8.0,
+          "title": "Discuss the different types of market."
+        },
+        {
+          "marks": 7.0,
+          "title": "What role does market structure play in influencing a firm's pricing decisions?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is wages?"
+        },
+        {
+          "marks": 5.0,
+          "title": "Differentiate between nominal wages and real wages."
+        },
+        {
+          "marks": 5.0,
+          "title": "How does wage vary?"
+        },
+        {
+          "marks": 5.0,
+          "title": "How is wage determined?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "Define economics."
+        },
+        {
+          "marks": 4,
+          "title": "Distinguish between micro and macro economics."
+        },
+        {
+          "marks": 10,
+          "title": "Discuss the objectives of studying micro economics."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "Define demand."
+        },
+        {
+          "marks": 7,
+          "title": "Discuss different types of price elasticity of demand with examples."
+        },
+        {
+          "marks": 8,
+          "title": "From the given table calculate price elasticity of demand of each product."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "Discuss the law of supply."
+        },
+        {
+          "marks": 7,
+          "title": "How can you measure consumers' surplus by using indifference curve?"
+        },
+        {
+          "marks": 8,
+          "title": "Write a note on the practical use of consumers' surplus and producers' surplus."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "Define utility, total utility and marginal utility."
+        },
+        {
+          "marks": 2.5,
+          "title": "Is satisfaction measurable? Discuss."
+        },
+        {
+          "marks": 10,
+          "title": "State the law of diminishing marginal utility."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "Define substitute goods, complementary goods and Giffen's goods."
+        },
+        {
+          "marks": 10,
+          "title": "Explain law of demand. Illustrate your answer with appropriate diagram."
+        },
+        {
+          "marks": 2.5,
+          "title": "What do you mean by snob effect and bandwagon effect of demand for goods?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "What is meant by opportunity cost?"
+        },
+        {
+          "marks": 5,
+          "title": "Distinguish between fixed cost and variable cost?"
+        },
+        {
+          "marks": 7.5,
+          "title": "With the help of an appropriate diagram state the relationship between average cost and marginal cost."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "Define micro economics."
+        },
+        {
+          "marks": 7,
+          "title": "Discuss the importance of micro economics."
+        },
+        {
+          "marks": 7,
+          "title": "Explain the scopes of micro economics."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7.5,
+          "title": "Narrate the prospects of micro economics in Bangladesh."
+        },
+        {
+          "marks": 10,
+          "title": "What institutional supports are provided by different organization for the development of micro economics in Bangladesh? Discuss."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7,
+          "title": "Discuss the features of economic law."
+        },
+        {
+          "marks": 3.5,
+          "title": "What is marginal utility?"
+        },
+        {
+          "marks": 7,
+          "title": "Discuss the limitations of the law of diminishing marginal utility."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What is return to scale?"
+        },
+        {
+          "marks": 7,
+          "title": "Discuss the types of return to scale."
+        },
+        {
+          "marks": 7,
+          "title": "From the following table calculate increasing, decreasing and constant return to scale."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "What is demand curve?"
+        },
+        {
+          "marks": 7,
+          "title": "How would you determine the demand curve of micro economics?"
+        },
+        {
+          "marks": 6.5,
+          "title": "When the price of petroleum goes up, what probably happens to the demand for natural gas? Discuss."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is monopolistic competition?"
+        },
+        {
+          "marks": 6,
+          "title": "\"Product differentiation is a typical feature of monopolistic competition\" - Explain."
+        },
+        {
+          "marks": 9,
+          "title": "Describe the theory of monopolistic competition."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "Define Economics."
+        },
+        {
+          "marks": 4,
+          "title": "Differentiate between micro economics and macroeconomics."
+        },
+        {
+          "marks": 6,
+          "title": "Explain the basic problems faced by an economic organisation."
+        },
+        {
+          "marks": 5.5,
+          "title": "Explain the law of economics."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What do you mean by production?"
+        },
+        {
+          "marks": 3,
+          "title": "What is production function?"
+        },
+        {
+          "marks": 8,
+          "title": "Explain the law of diminishing returns."
+        },
+        {
+          "marks": 3.5,
+          "title": "What is your idea about return to scale?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is your idea about wages?"
+        },
+        {
+          "marks": 4.5,
+          "title": "Differentiate between nominal wages and real wages."
+        },
+        {
+          "marks": 5,
+          "title": "Why does wage vary? Explain."
+        },
+        {
+          "marks": 5,
+          "title": "How is wage determined?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 8,
+          "title": "Explain the law of diminishing marginal utility with the help of a diagram. Why does marginal utility diminish?"
+        },
+        {
+          "marks": 9.5,
+          "title": "Explain the law of demand. Illustrate your answer with an appropriate diagram. What factors influence the demand for a commodity?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 8,
+          "title": "What are Giffen's goods? What is the shape of a demand curve?"
+        },
+        {
+          "marks": 9.5,
+          "title": "Define the price elasticity of demand for a commodity that states its importance. When is demand said to be inelastic."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 8,
+          "title": "With the help of an appropriate diagram state the relationship between Average cost and marginal cost."
+        },
+        {
+          "marks": 9.5,
+          "title": "What is meant by opportunity cost? Give two examples of implicit costs of a firm. What is supplementary cost?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is your idea about economics?"
+        },
+        {
+          "marks": 4,
+          "title": "Is economics a positive or normative science? Explain."
+        },
+        {
+          "marks": 8,
+          "title": "What are the basic problems an organization faces while conducting economic activities? Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is utility?"
+        },
+        {
+          "marks": 6,
+          "title": "Explain the law of diminishing marginal utility."
+        },
+        {
+          "marks": 6,
+          "title": "Explain the limitations of the law of diminishing marginal utility."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is supply?"
+        },
+        {
+          "marks": 6,
+          "title": "Explain the law of supply."
+        },
+        {
+          "marks": 6,
+          "title": "What are the factors that affect supply curve? Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is your idea about wage?"
+        },
+        {
+          "marks": 5,
+          "title": "Differentiate between nominal wage and real wage."
+        },
+        {
+          "marks": 7,
+          "title": "Why do wages vary? Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is meant by market?"
+        },
+        {
+          "marks": 4,
+          "title": "What are the different types of market?"
+        },
+        {
+          "marks": 7,
+          "title": "Explain the short run equilibrium of a firm and an industry under perfect competition."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is rent?"
+        },
+        {
+          "marks": 7,
+          "title": "Discuss the Recardian Theory of rent."
+        },
+        {
+          "marks": 4,
+          "title": "Do you agree with the view that rent is a differential surplus?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is the nature of profit?"
+        },
+        {
+          "marks": 4,
+          "title": "Why does profit occur?"
+        },
+        {
+          "marks": 7,
+          "title": "Discuss the Risk Bearing and Marginal Productivity Theory of profit."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "Define economics."
+        },
+        {
+          "marks": 5,
+          "title": "Differentiate between micro economics and macro economics."
+        },
+        {
+          "marks": 7,
+          "title": "Explain the basic problems faced by economic organization."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is demand?"
+        },
+        {
+          "marks": 6,
+          "title": "Explain the law of demand."
+        },
+        {
+          "marks": 6,
+          "title": "What are the factors that affect demand? Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What do you mean by production?"
+        },
+        {
+          "marks": 8,
+          "title": "Explain the law of diminishing returns."
+        },
+        {
+          "marks": 4,
+          "title": "What is your idea about return to scale?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is cost?"
+        },
+        {
+          "marks": 6,
+          "title": "Discuss different types of cost?"
+        },
+        {
+          "marks": 6,
+          "title": "Show the relationship among total cost (TC), variable cost (VC), fixed cost (FC), marginal cost (MC), and average cost (AC)."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "Define the elasticity of supply?"
+        },
+        {
+          "marks": 4,
+          "title": "What is meant by elastic and inelastic supply?"
+        },
+        {
+          "marks": 8,
+          "title": "What three factors influence the size of the elasticity of supply?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "What do you mean by monopoly, pure monopoly and bilateral monopoly?"
+        },
+        {
+          "marks": 4,
+          "title": "What is the difference between perfect competition and pure competition?"
+        },
+        {
+          "marks": 4,
+          "title": "Evaluate the view that the main goal of firms will always be that of profit maximization."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "Why do wage rates differ?"
+        },
+        {
+          "marks": 3,
+          "title": "How are interest rates determined?"
+        },
+        {
+          "marks": 3,
+          "title": "What is the difference between artificial rent and real rent?"
+        },
+        {
+          "marks": 3,
+          "title": "What is the difference between economic profits and accounting profits?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.0,
+          "title": "What is the basic theme of economics?"
+        },
+        {
+          "marks": 4.5,
+          "title": "Define economics and describe its functions."
+        },
+        {
+          "marks": 5.0,
+          "title": "How does microeconomics related with macroeconomics?"
+        },
+        {
+          "marks": 5.0,
+          "title": "Explain in brief, the law of economics."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is utility?"
+        },
+        {
+          "marks": 7.0,
+          "title": "Explain the law of diminishing marginal utility."
+        },
+        {
+          "marks": 8.0,
+          "title": "Explain the limitations of the law of diminishing marginal utility."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is your idea about elasticity of demand?"
+        },
+        {
+          "marks": 5.0,
+          "title": "Explain different forms of price elasticity."
+        },
+        {
+          "marks": 7.0,
+          "title": "What are the factors that affect price elasticity of demand? Explain."
+        },
+        {
+          "marks": 3.0,
+          "title": "Find out price elasticity and its form, given that ΔQ = 100, Q = 100, ΔP = 1, P = 5."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.0,
+          "title": "What is meant by market?"
+        },
+        {
+          "marks": 5.0,
+          "title": "What are the different types of market? Explain."
+        },
+        {
+          "marks": 4.0,
+          "title": "State the features of perfect competitive market."
+        },
+        {
+          "marks": 6.5,
+          "title": "Explain the short run equilibrium of a firm and an industry under perfect competition."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.0,
+          "title": "What do you know about wages?"
+        },
+        {
+          "marks": 4.5,
+          "title": "Differentiate between nominal wage and real wage."
+        },
+        {
+          "marks": 7.0,
+          "title": "How is wage determined? Explain."
+        },
+        {
+          "marks": 3.0,
+          "title": "Why does wage vary?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5.0,
+          "title": "Distinguish between a supply schedule and a supply curve."
+        },
+        {
+          "marks": 7.5,
+          "title": "Draw a supply curve from the point of origin and determine its elasticity."
+        },
+        {
+          "marks": 5.0,
+          "title": "Discuss the different types of elasticity of supply."
+        }
+      ]
+    }
+  ]
+}

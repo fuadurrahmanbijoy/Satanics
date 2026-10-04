@@ -1,0 +1,971 @@
+{
+  "clos": [
+    {
+      "title": "Introduction",
+      "statement": "Understand foundations of finance in business with coverage of major objectives and roles in business decision, relationship between firm and agents in the operating environment.",
+      "topics": [
+        {
+          "title": "Conceptual Framework"
+        },
+        {
+          "title": "Financial Decision Making"
+        },
+        {
+          "title": "Role of Finance in a Firm"
+        },
+        {
+          "title": "Goal of Financial Management of a Firm"
+        },
+        {
+          "title": "Finance as a Discipline"
+        },
+        {
+          "title": "Agency Theory"
+        }
+      ]
+    },
+    {
+      "title": "Time Value of Money",
+      "statement": "Apply time value of money concept in business problems and others.",
+      "topics": [
+        {
+          "title": "Basic Concept"
+        },
+        {
+          "title": "Computing Present Values"
+        },
+        {
+          "title": "Future Values"
+        }
+      ]
+    },
+    {
+      "title": "Capital Budgeting",
+      "statement": "Apply capital budgeting technique in evaluating projects and to select the best project.",
+      "topics": [
+        {
+          "title": "Basic Concepts"
+        },
+        {
+          "title": "The Capital Budgeting Process"
+        },
+        {
+          "title": "Cash Flow from an Investment"
+        },
+        {
+          "title": "Introduction to the Evaluation Techniques"
+        }
+      ]
+    },
+    {
+      "title": "Risk and Return",
+      "statement": "Calculate return and measured risk of securities using concept of CAPM and compare various efficiency category of the financial market.",
+      "topics": [
+        {
+          "title": "Financial and Business Risk"
+        },
+        {
+          "title": "Leverage and Risk"
+        },
+        {
+          "title": "Measuring Risk"
+        },
+        {
+          "title": "Probability Distribution"
+        },
+        {
+          "title": "Expected Value"
+        },
+        {
+          "title": "Standard Deviation and Co-efficient of Variation"
+        },
+        {
+          "title": "Risk Premium"
+        },
+        {
+          "title": "Risk and Required Return"
+        }
+      ]
+    },
+    {
+      "title": "Valuation",
+      "statement": "Understand the concept of financial securities and apply valuations techniques in pricing securities.",
+      "topics": [
+        {
+          "title": "Fundamental"
+        },
+        {
+          "title": "Valuation of Bonds"
+        },
+        {
+          "title": "Valuation of Common Stock"
+        }
+      ]
+    },
+    {
+      "title": "Working Capital Management",
+      "statement": "Compare inventory management techniques and evaluate short-term financing instruments.",
+      "topics": [
+        {
+          "title": "Concept of Working Capital"
+        },
+        {
+          "title": "Major Sources of Short Term Financing"
+        },
+        {
+          "title": "The Matching Principle"
+        },
+        {
+          "title": "Estimation of Working Capital Requirements"
+        }
+      ]
+    },
+    {
+      "title": "Intermediate and Long Term Financing",
+      "statement": "Understand the sources of long-term financing.",
+      "topics": [
+        {
+          "title": "Term Loans"
+        },
+        {
+          "title": "General Characteristics of Financing"
+        },
+        {
+          "title": "Methods Debt"
+        },
+        {
+          "title": "Preferred Stock"
+        },
+        {
+          "title": "Common Stock"
+        },
+        {
+          "title": "Retained Earnings"
+        },
+        {
+          "title": "Raising Funds from the Capital Market"
+        },
+        {
+          "title": "Institutions Supplying Long Term Finance in Bangladesh"
+        }
+      ]
+    },
+    {
+      "title": "Leasing",
+      "statement": "Know about leasing.",
+      "topics": [
+        {
+          "title": "Basic Concepts"
+        },
+        {
+          "title": "Type of Leases"
+        },
+        {
+          "title": "The Lease or Buy Decision"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What is meant by finance?"
+        },
+        {
+          "marks": 7,
+          "title": "What role does financial manager play for an organization?"
+        },
+        {
+          "marks": 7,
+          "title": "How does financial affect the operational efficiency and success of an organization? Discuss."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What do you mean Time Value of Money?"
+        },
+        {
+          "marks": 3,
+          "title": "What is annuity? Describe the various types of annuities."
+        },
+        {
+          "marks": 12.5,
+          "title": "Find PV of each stream using 15% discount rate; compare and discuss."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What is bond? Describe the main features of it."
+        },
+        {
+          "marks": 3,
+          "title": "What is bond status and how the required rate of return is relevant to bond status?"
+        },
+        {
+          "marks": 11,
+          "title": "Also comment."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What is risk?"
+        },
+        {
+          "marks": 5,
+          "title": "Discuss the various types of risk."
+        },
+        {
+          "marks": 11,
+          "title": "Given probability distributions, calculate std dev and coefficient of variation; state which is riskier."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is capital budgeting? Why is it necessary?"
+        },
+        {
+          "marks": 3,
+          "title": "Discuss the steps of capital budgeting."
+        },
+        {
+          "marks": 12,
+          "title": "Calculate payback period and NPV of each project; which is preferred."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "Define operating leverage, financial leverage and total leverage."
+        },
+        {
+          "marks": 2.5,
+          "title": "Discuss the significance of leverage of an organization."
+        },
+        {
+          "marks": 10,
+          "title": "ABC Company wants to produce a product of 80,000 units in 2025. Selling price Tk. 120/unit, variable cost Tk. 70/unit, fixed operating cost Tk. 5,60,000/year, interest paid to bank Tk. 30,000, preferred stockholders Tk. 25,000, tax rate 40%. Find out DOL, DFL, and DTL."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What is finance?"
+        },
+        {
+          "marks": 9.0,
+          "title": "Discuss the main functions of a financial manager."
+        },
+        {
+          "marks": 7.0,
+          "title": "\"Profit maximization is not the ultimate goal of a firm\". Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "Define short-term, mid-term and long-term financing."
+        },
+        {
+          "marks": 5.0,
+          "title": "Calculate the cost of trade credit by using the terms: 2/15, net 45. Recommend whether it would be better to forgo the cash discount or take the discount and borrow from a bank at 15% annual interest."
+        },
+        {
+          "marks": 11,
+          "title": "For each case in the table, calculate the future value of the annuity assuming it is an ordinary annuity and an annuity due."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What is leverage?"
+        },
+        {
+          "marks": 3.0,
+          "title": "What do you mean by DOL, DFL and DTL?"
+        },
+        {
+          "marks": 13,
+          "title": "Apex products has fixed operating cost of Tk. 3,80,000; variable operating cost of Tk. 20 per unit and a selling price of Tk. 70 per unit. Calculate operating break-even point in units; EBIT at 9,000, 10,000 and 11,000 units; degree of operating leverage at those levels."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.0,
+          "title": "What are the key features of a bond?"
+        },
+        {
+          "marks": 8.0,
+          "title": "Describe the sources of these types of financing."
+        },
+        {
+          "marks": 6.5,
+          "title": "\"Long-term financing is very important for a new business organization\"- explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What do you mean by mixed streams of cash flows?"
+        },
+        {
+          "marks": 3.5,
+          "title": "How is the future value and present value of a mixed streams of cash flows calculated?"
+        },
+        {
+          "marks": 12.5,
+          "title": "Find PV using 15% discount rate; compare and discuss."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What is capital budgeting? Why is it done?"
+        },
+        {
+          "marks": 3.5,
+          "title": "Describe the steps of capital budgeting."
+        },
+        {
+          "marks": 10.5,
+          "title": "Calculate NPV of each press; evaluate acceptability; which is better."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What is bond? Describe the main features of it."
+        },
+        {
+          "marks": 3,
+          "title": "What do you mean by bond status? How the required rate of return is relevant to bond status?"
+        },
+        {
+          "marks": 11,
+          "title": "Comment on your answers."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "Define risk."
+        },
+        {
+          "marks": 4,
+          "title": "Discuss the various types of risk."
+        },
+        {
+          "marks": 12,
+          "title": "Given probability distributions, calculate expected value, standard deviation and coefficient of variation of each; which is riskier."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What do you mean by capital budgeting?"
+        },
+        {
+          "marks": 5,
+          "title": "Discuss the steps of capital budgeting."
+        },
+        {
+          "marks": 11,
+          "title": "Calculate PBP and NPV of each project; which project is preferred."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "Define leverage."
+        },
+        {
+          "marks": 3,
+          "title": "Distinguish between operating leverage and financial leverage."
+        },
+        {
+          "marks": 13,
+          "title": "Carolina Fastener Inc. makes a patented marine bulkhead latch that wholesales for $6.00, variable operating costs $3.50, fixed operating costs $50,000/year, interest $13,000, preferred dividends $7,000/year, selling 30,000 latches/year, taxed at 40%. Calculate operating breakeven point; DOL, DFL and DTL."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7,
+          "title": "\"The ultimate goal of a business firm is to maximize wealth, not to maximize profit\"- Explain."
+        },
+        {
+          "marks": 7,
+          "title": "Identity and discuss the decisions generally taken by a finance manager."
+        },
+        {
+          "marks": 3.5,
+          "title": "Show the relationship between finance and management."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What do you mean by Time Value of Money?"
+        },
+        {
+          "marks": 5,
+          "title": "What is annuity? Discuss the various types of annuities."
+        },
+        {
+          "marks": 11,
+          "title": "Calculate the present value of each project and comment about it."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is finance?"
+        },
+        {
+          "marks": 8,
+          "title": "Discuss the main functions of financial managers."
+        },
+        {
+          "marks": 7,
+          "title": "\"Profit maximization is not the ultimate goal of a financial manager\", - Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What do you mean by mixed streams of cash flows?"
+        },
+        {
+          "marks": 2,
+          "title": "How is the future value and present value of a mixed streams of cash flows calculated?"
+        },
+        {
+          "marks": 14,
+          "title": "Find PV of each stream using 15% discount rate; compare and discuss."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "\"Capital budgeting is very important for an investor\" - Explain."
+        },
+        {
+          "marks": 5,
+          "title": "Discuss the techniques of capital budgeting."
+        },
+        {
+          "marks": 9,
+          "title": "Calculate NPV of each project over its life, rank the projects; which project would you recommend and why."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What procedure is used to value a bond that pays annual interest?"
+        },
+        {
+          "marks": 4,
+          "title": "What relationship between the required return and the coupon interest rate will cause a bond to sell at a discount? At a premium? At its par value?"
+        },
+        {
+          "marks": 10,
+          "title": "A bond has a coupon of 6.5% and it pays interest semiannually. With a face value of Tk. 1,000, it will mature after 10 years. If you require a return of 12% from this bond, how much should you pay for it?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is risk in the context of financial decision making?"
+        },
+        {
+          "marks": 4.5,
+          "title": "Define return, and describe how to find the rate of return on an investment?"
+        },
+        {
+          "marks": 10,
+          "title": "Answer sub-parts a-d."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "Define short-term, mid-term and long-term financing."
+        },
+        {
+          "marks": 8,
+          "title": "Discuss the sources of these types of financing."
+        },
+        {
+          "marks": 8,
+          "title": "\"Long-term financing is very important for a new business organization\" - Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What do you mean by Finance?"
+        },
+        {
+          "marks": 7,
+          "title": "Identify and discuss the decisions generally taken by a finance manager."
+        },
+        {
+          "marks": 7,
+          "title": "How does finance affect the success and operation efficiency of an organisation? Discuss."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What do you mean by Time Value of Money?"
+        },
+        {
+          "marks": 5,
+          "title": "What is annuity? Discuss the various types of annuities."
+        },
+        {
+          "marks": 11,
+          "title": "Find the present value of each stream using a 12% discount rate; compare and discuss."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "Define risk."
+        },
+        {
+          "marks": 4.5,
+          "title": "Show the difference between financial risk and business risk."
+        },
+        {
+          "marks": 11,
+          "title": "Given probability distributions, calculate expected values of return, standard deviation, coefficient of variation for each; which asset is more risky."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.5,
+          "title": "What is a bond? What are the key features of it?"
+        },
+        {
+          "marks": 3,
+          "title": "What are the difference between bond and stock?"
+        },
+        {
+          "marks": 10,
+          "title": "Find the value of each of the bonds shown in the table (all pay interest annually)."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is capital budgeting? Why is it done?"
+        },
+        {
+          "marks": 3.5,
+          "title": "Discuss the steps of the capital budgeting."
+        },
+        {
+          "marks": 11,
+          "title": "Calculate NPV of each press; evaluate acceptability; which is better."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "Define various types of leverage."
+        },
+        {
+          "marks": 3.5,
+          "title": "What do you mean by DOL, DFL, and DTL?"
+        },
+        {
+          "marks": 11,
+          "title": "H. Products has fixed operating cost of Tk. 3,80,000, variable operating cost of Tk. 16/unit and selling price of Tk. 63.50/unit. Calculate the firm's EBIT at 9000, 10000 and 11000 units; calculate the degree of operating leverage at 10000 units."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is finance?"
+        },
+        {
+          "marks": 6,
+          "title": "Discuss the main functions of financial managers."
+        },
+        {
+          "marks": 6,
+          "title": "\"Profit maximization is not the ultimate goal of a firm.\" Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "What do you mean by single sum case, annuity case, and mixed stream case? Give examples. Explain 4 factor charts."
+        },
+        {
+          "marks": 6,
+          "title": "Mr. Mamun wishes to accumulate Tk. 5,00,000 by the end of the 5 years by making equal annual end of year deposits over the next 5 years. If he can earn 8% on his investments, how much must be deposited at the end of each year to meet this goal?"
+        },
+        {
+          "marks": 3,
+          "title": "Calculate the cost of trade credit by using the following credit terms: 1/10, net 55. Recommend whether it would be better to forgo the cash discount and borrow from a bank at 14% annual interest."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1,
+          "title": "What is bond? Describe the main features of it."
+        },
+        {
+          "marks": 3,
+          "title": "What do you mean by bond status?"
+        },
+        {
+          "marks": 10,
+          "title": "Calculate the value of each of the bonds shown in the table (all pay interest annually)."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1,
+          "title": "What is leverage?"
+        },
+        {
+          "marks": 13,
+          "title": "Carolina Fastener Inc. makes patented marine bulkhead latch, wholesales Tk. 6 each, variable operating cost Tk. 3.50, fixed operating costs Tk. 50,000/year, interest Tk. 13,000, preferred dividends Tk. 7,000/year, 30,000 latches/year, tax rate 40%. Calculate the firm's degree of operating leverage (DOL), degree of financial leverage (DFL), and degree of total leverage (DTL)."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is risk?"
+        },
+        {
+          "marks": 4,
+          "title": "Discuss the various types of risk?"
+        },
+        {
+          "marks": 8,
+          "title": "Given probability distributions, calculate expected value, standard deviation, coefficient of variation of each project; which project appears to have higher relative risk."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What is capital budgeting?"
+        },
+        {
+          "marks": 4.5,
+          "title": "What steps are involved in capital budgeting?"
+        },
+        {
+          "marks": 8,
+          "title": "Calculate PBP and NPV of each project; which project is preferred."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "Define short term, intermediate and long term financing."
+        },
+        {
+          "marks": 4,
+          "title": "What are the sources of these financing?"
+        },
+        {
+          "marks": 7,
+          "title": "For each case in the table, calculate the future value of the annuity assuming it is (i) An ordinary annuity; (ii) An annuity due."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.0,
+          "title": "What do you mean by time value of money?"
+        },
+        {
+          "marks": 4.0,
+          "title": "What is annuity? Discuss the various types of annuities?"
+        },
+        {
+          "marks": 9.0,
+          "title": "Calculate the future value of the following annuity cases assuming them ordinary annuity and annuity due."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.0,
+          "title": "What is the cost of capital? What role does it play in long-term investment decisions?"
+        },
+        {
+          "marks": 1.5,
+          "title": "Why do we assume that business risk and financial risk are unchanged when evaluating the cost of capital?"
+        },
+        {
+          "marks": 9.5,
+          "title": "Answer sub-parts (i)-(vi)."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.0,
+          "title": "What is float and what are its three components?"
+        },
+        {
+          "marks": 6.0,
+          "title": "Meril Products is concerned about managing cash efficiently. On average, inventories have an age of 90 days, and accounts receivable are collected in 60 days. Accounts payable are paid approximately 30 days after they arise. The firm has annual sales of about Tk. 30 million. Assume no difference in investment per dollar of sales in inventory, receivables, and payables; 365-day year. Answer sub-parts (i)-(iv)."
+        },
+        {
+          "marks": 6.0,
+          "title": "Answer sub-parts (i)-(iii)."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.0,
+          "title": "What is capital budgeting?"
+        },
+        {
+          "marks": 3.0,
+          "title": "What steps are involved in capital budgeting? Discuss."
+        },
+        {
+          "marks": 8.0,
+          "title": "Calculate PBP and NPV of each project; which project is preferred in the light of the methods used."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.0,
+          "title": "What are the key features of a bond?"
+        },
+        {
+          "marks": 1.0,
+          "title": "Define yield to maturity (YTM)."
+        },
+        {
+          "marks": 11.0,
+          "title": "Explain the relationship between coupon interest rate and YTM, par value and market value."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.0,
+          "title": "What is risk?"
+        },
+        {
+          "marks": 4.0,
+          "title": "Discuss the various types of risk."
+        },
+        {
+          "marks": 9.0,
+          "title": "Given probability distributions, calculate the expected value of return, standard deviation and co-efficient of variation of each of the assets."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.0,
+          "title": "What is leasing? Define, compare, and contrast operating leases and financial leases."
+        },
+        {
+          "marks": 2.0,
+          "title": "Describe the four basic steps involved in the lease-versus-purchase decision process."
+        },
+        {
+          "marks": 8.0,
+          "title": "Given lease and purchase plan details, determine after-tax cash outflows and present value of each alternative."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "Define Finance."
+        },
+        {
+          "marks": 7,
+          "title": "What are the key functions of financial managers? Discuss."
+        },
+        {
+          "marks": 7,
+          "title": "How does finance affect the success and operations efficiency of an organization? Discuss."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What do you mean by Time Value of Money?"
+        },
+        {
+          "marks": 5,
+          "title": "What is annuity? Discuss the various types of annuities."
+        },
+        {
+          "marks": 11,
+          "title": "Find the present value of each stream using a 15% discount rate; compare and discuss."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 1.5,
+          "title": "What is Risk?"
+        },
+        {
+          "marks": 5,
+          "title": "Describe the various types of risk."
+        },
+        {
+          "marks": 1,
+          "title": "What do you mean by Standard Deviation?"
+        },
+        {
+          "marks": 10,
+          "title": "Given probability distributions, calculate expected value of return for each (which provides larger expected return); calculate standard deviation and co-efficient of variation for each (which has greater relative risk)."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is Leverage?"
+        },
+        {
+          "marks": 4.5,
+          "title": "What do you mean by DOL, DFL and DTL?"
+        },
+        {
+          "marks": 11,
+          "title": "Grey products has fixed operating cost of Tk. 3,80,000, variable operating cost of Tk. 16 per unit and a selling price of Tk. 63.50 per unit. Calculate operating break even point in units; firm's EBIT at 9000, 10,000 and 11,000 units; degree of operating leverage at 10,000 units."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.5,
+          "title": "What is bond? What are the key features of it?"
+        },
+        {
+          "marks": 3,
+          "title": "What are the differences between bond and stock?"
+        },
+        {
+          "marks": 10,
+          "title": "Find the value of each of the bonds shown in the table (all pay interest annually)."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is Capital Budgeting?"
+        },
+        {
+          "marks": 3,
+          "title": "What steps are involved in capital budgeting?"
+        },
+        {
+          "marks": 12,
+          "title": "Calculate the projects' PBP and NPV; which project is recommended for investment."
+        }
+      ]
+    }
+  ]
+}

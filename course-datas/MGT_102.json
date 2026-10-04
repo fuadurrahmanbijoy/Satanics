@@ -1,0 +1,1007 @@
+{
+  "clos": [
+    {
+      "title": "Introduction to Management",
+      "statement": "Define management and explain the nature and purpose of management.",
+      "topics": [
+        {
+          "title": "Definition of Management"
+        },
+        {
+          "title": "Nature"
+        },
+        {
+          "title": "Purpose and Principles of Management"
+        },
+        {
+          "title": "Managerial Responsibility"
+        },
+        {
+          "title": "Types of Managers"
+        },
+        {
+          "title": "Management Process"
+        },
+        {
+          "title": "Skills"
+        },
+        {
+          "title": "Concepts of Productivity"
+        },
+        {
+          "title": "Effectiveness and Efficiency"
+        },
+        {
+          "title": "Management as a Science"
+        },
+        {
+          "title": "Management as an Art"
+        },
+        {
+          "title": "Management as a Profession"
+        }
+      ]
+    },
+    {
+      "title": "Environment",
+      "statement": "Understand environmental forces that affect managerial efficiency.",
+      "topics": [
+        {
+          "title": "Internal and External Environment of Organizations"
+        },
+        {
+          "title": "Components of External Environment"
+        },
+        {
+          "title": "Managing Environment"
+        }
+      ]
+    },
+    {
+      "title": "Planning",
+      "statement": "Describe planning, its nature, types and planning effectiveness.",
+      "topics": [
+        {
+          "title": "Meaning"
+        },
+        {
+          "title": "Nature"
+        },
+        {
+          "title": "Types"
+        },
+        {
+          "title": "Limits to Planning"
+        },
+        {
+          "title": "Making Planning Effective"
+        }
+      ]
+    },
+    {
+      "title": "Objectives",
+      "statement": "Comprehend objectives, management by objectives, process of MBO, and benefits and weakness of MBO.",
+      "topics": [
+        {
+          "title": "Nature of Objectives"
+        },
+        {
+          "title": "Management by Objectives"
+        },
+        {
+          "title": "Process of MBO"
+        },
+        {
+          "title": "Setting Objectives"
+        },
+        {
+          "title": "Benefits and Weakness of MBO"
+        }
+      ]
+    },
+    {
+      "title": "Decision Making",
+      "statement": "List the elements and steps in the rational decision-making process and discuss decision-making, including group decision making, as it currently is practiced, identifying the constraints that exist.",
+      "topics": [
+        {
+          "title": "Decision Making Process"
+        },
+        {
+          "title": "Conditions of Decision Making"
+        },
+        {
+          "title": "Nature of Managerial Decision Making"
+        },
+        {
+          "title": "Other Factors in Decision Making"
+        },
+        {
+          "title": "Decision Support Systems"
+        }
+      ]
+    },
+    {
+      "title": "Organizing",
+      "statement": "Describe the major considerations in organizing an enterprise's resources, including human resources.",
+      "topics": [
+        {
+          "title": "Meaning"
+        },
+        {
+          "title": "Nature"
+        },
+        {
+          "title": "Purpose"
+        },
+        {
+          "title": "Types of Organization"
+        },
+        {
+          "title": "Organizational Structure"
+        },
+        {
+          "title": "Span of Management"
+        },
+        {
+          "title": "Departmentalization"
+        },
+        {
+          "title": "Delegation of Authority"
+        },
+        {
+          "title": "Centralization and Decentralization"
+        },
+        {
+          "title": "Coordination"
+        }
+      ]
+    },
+    {
+      "title": "Leading",
+      "statement": "Evaluate the alternative leadership styles and make a decision regarding their appropriate use.",
+      "topics": [
+        {
+          "title": "Human Factors in Management"
+        },
+        {
+          "title": "Relevant Theories"
+        },
+        {
+          "title": "Creativity and Innovation"
+        },
+        {
+          "title": "Motivation"
+        },
+        {
+          "title": "Leadership"
+        }
+      ]
+    },
+    {
+      "title": "Controlling",
+      "statement": "Outline the control process and discuss the various methods of control available to the manager.",
+      "topics": [
+        {
+          "title": "Meaning"
+        },
+        {
+          "title": "Nature"
+        },
+        {
+          "title": "Principles"
+        },
+        {
+          "title": "Control Process"
+        },
+        {
+          "title": "Types of Control Methods"
+        },
+        {
+          "title": "Requirements of Effective Controls"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "Define management and scientific management."
+        },
+        {
+          "marks": 5,
+          "title": "What are the various functions of Management?"
+        },
+        {
+          "marks": 8.5,
+          "title": "Explain the nature and purpose of management."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 8,
+          "title": "Explain Henri Fayol's 14 principles of management."
+        },
+        {
+          "marks": 9.5,
+          "title": "Describe about the evolution of management thought."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is planning?"
+        },
+        {
+          "marks": 9,
+          "title": "List and describe the six steps in the planning process."
+        },
+        {
+          "marks": 6,
+          "title": "Why do organizational plans fail?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "Define organizing."
+        },
+        {
+          "marks": 6,
+          "title": "Distinguish between formal and informal organization."
+        },
+        {
+          "marks": 8,
+          "title": "List and describe the steps in the organizing process."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is leadership?"
+        },
+        {
+          "marks": 5,
+          "title": "How does leadership differ from management?"
+        },
+        {
+          "marks": 10,
+          "title": "Draw and explain Tannenbaum and Schmidt's leadership model."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "Define motivation."
+        },
+        {
+          "marks": 4.5,
+          "title": "Draw and explain a model that illustrates the needs-goal theory of motivation."
+        },
+        {
+          "marks": 10,
+          "title": "Briefly describe Maslow's need hierarchy theory."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.0,
+          "title": "Define Management."
+        },
+        {
+          "marks": 6.0,
+          "title": "List and describe the management skills that are crucial for managers at the different levels."
+        },
+        {
+          "marks": 7.5,
+          "title": "Briefly describe the different functions of management."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.0,
+          "title": "Define corporate social responsibility."
+        },
+        {
+          "marks": 4.0,
+          "title": "What is meant by sustainability in organizational management?"
+        },
+        {
+          "marks": 9.5,
+          "title": "What do you know about Davis model of corporate social responsibility?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.0,
+          "title": "What is span of management?"
+        },
+        {
+          "marks": 6.0,
+          "title": "List and describe the factors that should be considered in determining the span of management?"
+        },
+        {
+          "marks": 7.5,
+          "title": "What is delegation? Briefly describe the obstacles relating to delegation process."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7.0,
+          "title": "What do you mean by emotional intelligence of a leader? Justify its necessity."
+        },
+        {
+          "marks": 5.5,
+          "title": "Illustrate the different types of leadership power."
+        },
+        {
+          "marks": 5.0,
+          "title": "Why do people in organizations join informal groups and teams?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5.5,
+          "title": "Discuss how authority is distributed in organizations?"
+        },
+        {
+          "marks": 6.0,
+          "title": "Illustrate the basic coordinating activities undertaken by organizations."
+        },
+        {
+          "marks": 6.0,
+          "title": "Discuss the structural coordination techniques in organizations."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5.0,
+          "title": "Compare and contrast the bureaucratic and behavioral models of organizational design."
+        },
+        {
+          "marks": 5.5,
+          "title": "Mention the advantages and disadvantages of each."
+        },
+        {
+          "marks": 7.0,
+          "title": "What are the basic situational factors that affect an organization's design?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "Define Management."
+        },
+        {
+          "marks": 7,
+          "title": "List and describe the different types of resources that are used by managers."
+        },
+        {
+          "marks": 8,
+          "title": "Briefly describe the important skills that are required by managers."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is planning?"
+        },
+        {
+          "marks": 8,
+          "title": "Briefly describe the steps that are used in planning process."
+        },
+        {
+          "marks": 7,
+          "title": "How can we maximize the effectiveness of the planning process?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "What is leadership?"
+        },
+        {
+          "marks": 7,
+          "title": "Differentiate between trait approach to leadership and situational approach to leadership."
+        },
+        {
+          "marks": 8,
+          "title": "What do you know about transformational leadership, coaching and super leadership?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 8.5,
+          "title": "List and describe the basic elements of the decision-making situation."
+        },
+        {
+          "marks": 5,
+          "title": "Discuss the advantages and disadvantages of using a group to make an organizational decision."
+        },
+        {
+          "marks": 4,
+          "title": "What is the difference between standing plan and single-use plan?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5.5,
+          "title": "Describe the forces that influence formal structure."
+        },
+        {
+          "marks": 4,
+          "title": "Does division of labor increase the need for coordination? Explain."
+        },
+        {
+          "marks": 4,
+          "title": "Is span of management an important management concept? Explain."
+        },
+        {
+          "marks": 4,
+          "title": "Discuss the relationship between responsibility and authority."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What is the relationship between controlling and the controller?"
+        },
+        {
+          "marks": 7,
+          "title": "List and define the three basic types of control that can be used in organizations."
+        },
+        {
+          "marks": 7,
+          "title": "Describe several potential barriers to successful controlling."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2.5,
+          "title": "List the different approaches to managing."
+        },
+        {
+          "marks": 5,
+          "title": "Differentiate between management science approach and scientific management approach."
+        },
+        {
+          "marks": 10,
+          "title": "List and define Fayol's general principles of management."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "Define business ethics."
+        },
+        {
+          "marks": 4.5,
+          "title": "What is meant by sustainability in organizational management?"
+        },
+        {
+          "marks": 10,
+          "title": "What do you know about corporate social responsibility?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "Define motivation and explain why managers must understand it?"
+        },
+        {
+          "marks": 6.5,
+          "title": "Draw and explain a model that illustrates the needs-goal theory of motivation."
+        },
+        {
+          "marks": 7,
+          "title": "Briefly describe Maslow's need-hierarchy theory?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is meant by organizational objective?"
+        },
+        {
+          "marks": 6,
+          "title": "Describe the eight key areas in which organizational objectives should be set."
+        },
+        {
+          "marks": 8.5,
+          "title": "Discuss the MBO process with the help of a diagram."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "\"Organizing is the primary mechanism by which managers activate plans\" - Explain."
+        },
+        {
+          "marks": 7,
+          "title": "Describe various forms of management organization."
+        },
+        {
+          "marks": 6.5,
+          "title": "How to make organization effective?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "How does leadership differ from management?"
+        },
+        {
+          "marks": 7.5,
+          "title": "Explain different styles of leadership."
+        },
+        {
+          "marks": 6,
+          "title": "What are the bases of a leader's power?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "Define Management."
+        },
+        {
+          "marks": 8,
+          "title": "Discuss the various skills of a manager."
+        },
+        {
+          "marks": 6.5,
+          "title": "Distinguish between productivity, effectiveness and efficiency."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "Do you think that right decision making drives the management?"
+        },
+        {
+          "marks": 7.5,
+          "title": "What is the best decision making process?"
+        },
+        {
+          "marks": 5,
+          "title": "What are the conditions of decision-making?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7.5,
+          "title": "What kind of influence does the external environment have on the organisation's internal environment?"
+        },
+        {
+          "marks": 10,
+          "title": "How will the organisation adapt to changes in external influence?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5.5,
+          "title": "Is decentralization related to departmentalization?"
+        },
+        {
+          "marks": 12,
+          "title": "Discuss the advantages and disadvantages of centralization and decentralization."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is motivation?"
+        },
+        {
+          "marks": 7,
+          "title": "Discuss the Maslow's theory of motivation."
+        },
+        {
+          "marks": 7.5,
+          "title": "What are the assumptions about theory X and Theory Y?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What are meant by controlling and monitoring?"
+        },
+        {
+          "marks": 7,
+          "title": "What are the steps in controlling? Discuss."
+        },
+        {
+          "marks": 7.5,
+          "title": "Discuss the relationship between planning and controlling."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "Discuss the importance of management."
+        },
+        {
+          "marks": 4,
+          "title": "What are the principles of management?"
+        },
+        {
+          "marks": 6,
+          "title": "Is Management a science or an art? Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "State in brief the nature of planning."
+        },
+        {
+          "marks": 5,
+          "title": "What are the different types of plans?"
+        },
+        {
+          "marks": 5,
+          "title": "Distinguish between standing plans and single-use plans."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "What is organizing?"
+        },
+        {
+          "marks": 4,
+          "title": "Do you think there is any relationship between organizational levels and span of management?"
+        },
+        {
+          "marks": 6,
+          "title": "Briefly discuss the factors determining an effective span."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "How can you define leadership?"
+        },
+        {
+          "marks": 5,
+          "title": "Distinguish between leadership and managership."
+        },
+        {
+          "marks": 6,
+          "title": "Describe in short the types of leadership."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "Define Management by Objectives."
+        },
+        {
+          "marks": 7,
+          "title": "Discuss the Management by Objectives cycle."
+        },
+        {
+          "marks": 4,
+          "title": "Mention the weaknesses of MBO."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "How would you distinguish between authority and power?"
+        },
+        {
+          "marks": 5,
+          "title": "What is functional authority? How can it be delegated?"
+        },
+        {
+          "marks": 5,
+          "title": "Discuss the various sources of power."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "Describe controlling."
+        },
+        {
+          "marks": 7,
+          "title": "Describe the main steps in the controlling process."
+        },
+        {
+          "marks": 4,
+          "title": "How can controlling help a manager to become more efficient?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "How would you like to define management?"
+        },
+        {
+          "marks": 5,
+          "title": "Elaborate the core functions of the management process."
+        },
+        {
+          "marks": 5,
+          "title": "What are the differences between productivity, effectiveness and efficiency?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "What effects do the external social, political and legal environments have on an enterprise?"
+        },
+        {
+          "marks": 4,
+          "title": "How do managers respond to these influences?"
+        },
+        {
+          "marks": 5,
+          "title": "What are the major social responsibilities of business managers?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "What do you understand by decision-making?"
+        },
+        {
+          "marks": 6,
+          "title": "Elaborate the steps in the decision-making process."
+        },
+        {
+          "marks": 4,
+          "title": "What are decision-making conditions?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "Explain the assumptions about motivation."
+        },
+        {
+          "marks": 4,
+          "title": "How would you describe the human factors that affect management?"
+        },
+        {
+          "marks": 6,
+          "title": "What are the assumptions about people under Theory X and Theory Y?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is planning?"
+        },
+        {
+          "marks": 2,
+          "title": "What are the purposes of planning?"
+        },
+        {
+          "marks": 8,
+          "title": "Discuss the steps of the planning process."
+        },
+        {
+          "marks": 2,
+          "title": "What is a planning premise?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "What are the relations between responsibility, authority and delegation?"
+        },
+        {
+          "marks": 6,
+          "title": "What are the differences between line authority, staff authority and functional authority?"
+        },
+        {
+          "marks": 2,
+          "title": "What is delegation?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 2,
+          "title": "What is controlling?"
+        },
+        {
+          "marks": 6,
+          "title": "What are the 3 main steps in the controlling process?"
+        },
+        {
+          "marks": 4,
+          "title": "Explain the significance of how and what to measure in the controlling process."
+        },
+        {
+          "marks": 2,
+          "title": "What is a standard?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "Describe the importance of management in an organization."
+        },
+        {
+          "marks": 7.5,
+          "title": "Define management skill. Illustrate management skill in the context of classic view and contemporary view."
+        },
+        {
+          "marks": 5,
+          "title": "Discuss management as a profession."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "What do you mean by objective?"
+        },
+        {
+          "marks": 5,
+          "title": "Discuss the nature of objective."
+        },
+        {
+          "marks": 7.5,
+          "title": "How would you describe Management By Objective (MBO)?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "What is meant by planning?"
+        },
+        {
+          "marks": 6.5,
+          "title": "Distinguish between 'single use plan and standing plan'."
+        },
+        {
+          "marks": 6,
+          "title": "Briefly discuss the limitations of planning."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "Show the model of a decision making process and discuss."
+        },
+        {
+          "marks": 5,
+          "title": "Mention the elements in a decision situation and give a brief description."
+        },
+        {
+          "marks": 7.5,
+          "title": "Discuss Probability Theory and Decision Trees as decision making tools."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "What do you understand by leadership?"
+        },
+        {
+          "marks": 5,
+          "title": "How would you distinguish between a leader and a manager?"
+        },
+        {
+          "marks": 7.5,
+          "title": "Name the different types of leadership."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "How you can relate between power and control?"
+        },
+        {
+          "marks": 7,
+          "title": "Explain the controlling process in an organization."
+        },
+        {
+          "marks": 6.5,
+          "title": "How controlling process may succeed?"
+        }
+      ]
+    }
+  ]
+}

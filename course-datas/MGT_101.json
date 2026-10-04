@@ -1,0 +1,950 @@
+{
+  "clos": [
+    {
+      "title": "Concept of Business",
+      "statement": "Understand and describe the various aspects of business.",
+      "topics": [
+        {
+          "title": "Concept of Business"
+        },
+        {
+          "title": "Branches of Business"
+        },
+        {
+          "title": "Business Organization"
+        },
+        {
+          "title": "Objectives of Business"
+        },
+        {
+          "title": "Factors of Production"
+        },
+        {
+          "title": "Location of Plant"
+        }
+      ]
+    },
+    {
+      "title": "Business Environment",
+      "statement": "Describe the environment of business and its interaction.",
+      "topics": [
+        {
+          "title": "Internal Environment"
+        },
+        {
+          "title": "External Environment"
+        },
+        {
+          "title": "Interaction with Environment"
+        }
+      ]
+    },
+    {
+      "title": "Social Responsibility of Business",
+      "statement": "Realize the need for social responsibility of business.",
+      "topics": [
+        {
+          "title": "Concept of Social Responsibility (CSR) and Its Importance"
+        },
+        {
+          "title": "Responsibility of Business to the Society"
+        },
+        {
+          "title": "Responsibility to Supplier"
+        },
+        {
+          "title": "Responsibility to Investors and Stakeholders"
+        }
+      ]
+    },
+    {
+      "title": "Forms of Business Ownership",
+      "statement": "Have a clear idea about different forms of business organization and its process.",
+      "topics": [
+        {
+          "title": "Different Types of Business Organization"
+        },
+        {
+          "title": "Sole Proprietorship"
+        },
+        {
+          "title": "Partnership"
+        },
+        {
+          "title": "Joint Stock Company"
+        },
+        {
+          "title": "Cooperative Society"
+        },
+        {
+          "title": "State Enterprise"
+        },
+        {
+          "title": "Formation and Management"
+        },
+        {
+          "title": "Features of Different Types of Business Organization"
+        }
+      ]
+    },
+    {
+      "title": "Foreign Trade",
+      "statement": "Understand the process of export and import, economic importance of export.",
+      "topics": [
+        {
+          "title": "Importance of Foreign Trade"
+        },
+        {
+          "title": "Export and Import Procedure"
+        },
+        {
+          "title": "Promotional Strategies for Export of Bangladesh"
+        }
+      ]
+    },
+    {
+      "title": "Multinational Corporations",
+      "statement": "Describe the functions and importance of multinational corporations.",
+      "topics": [
+        {
+          "title": "Concept of Multinational Corporations (MNCs)"
+        },
+        {
+          "title": "Importance of MNCs"
+        },
+        {
+          "title": "Impact of MNCs to the Developing Countries like Bangladesh"
+        }
+      ]
+    },
+    {
+      "title": "Institutions for Promoting Business in Bangladesh",
+      "statement": "Identify the institutions for promoting business in Bangladesh and its role in business expansion.",
+      "topics": [
+        {
+          "title": "Bangladesh Securities and Exchange Commission (BSEC)"
+        },
+        {
+          "title": "Dhaka Stock Exchange (DSE)"
+        },
+        {
+          "title": "FBCCI"
+        },
+        {
+          "title": "EPZ"
+        },
+        {
+          "title": "EPB"
+        },
+        {
+          "title": "TCCB"
+        },
+        {
+          "title": "Other Institutions"
+        }
+      ]
+    },
+    {
+      "title": "Business Combination and Integration",
+      "statement": "Understand the need for business combination.",
+      "topics": [
+        {
+          "title": "Forms of Business Combination"
+        },
+        {
+          "title": "Opportunity and Threats of Business Combination"
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "sub_questions": [
+        {
+          "marks": 4.5,
+          "title": "Discuss the scope of business."
+        },
+        {
+          "marks": 6.5,
+          "title": "Describe the basic characteristics of business."
+        },
+        {
+          "marks": 6.5,
+          "title": "What factors should be considered in selecting business location? Discuss in brief."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "Discuss the advantage and disadvantages of partnership."
+        },
+        {
+          "marks": 5,
+          "title": "What distinguishes a partnership from a sole proprietorship?"
+        },
+        {
+          "marks": 6.5,
+          "title": "Elucidate the operational mechanisms of cooperative enterprises."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "What is state enterprise?"
+        },
+        {
+          "marks": 7,
+          "title": "Briefly describe the different forms of state enterprise."
+        },
+        {
+          "marks": 7,
+          "title": "Do you support state enterprise? Why or why not? Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "Present your knowledge about share market."
+        },
+        {
+          "marks": 8.5,
+          "title": "Describe the functions of Dhaka Stock Exchange."
+        },
+        {
+          "marks": 3,
+          "title": "What do you know about IPO?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "Briefly describe the export procedure."
+        },
+        {
+          "marks": 5.5,
+          "title": "Identify the titles of the documents used for export and import transactions."
+        },
+        {
+          "marks": 6,
+          "title": "What barriers hinder export trade in Bangladesh?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "What is meant by the term \"business combination\"?"
+        },
+        {
+          "marks": 6,
+          "title": "Why are business combinations gaining importance in business?"
+        },
+        {
+          "marks": 7.5,
+          "title": "Briefly describe the different forms of business combination."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.5,
+          "title": "Define trade, commerce and industry."
+        },
+        {
+          "marks": 6.5,
+          "title": "Describe the objectives of business."
+        },
+        {
+          "marks": 6.5,
+          "title": "Discuss the pre-requisites for the success of a business."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.0,
+          "title": "What are meant by 'balance of trade' and 'balance of payment'?"
+        },
+        {
+          "marks": 7.0,
+          "title": "Discuss the importance of foreign trade."
+        },
+        {
+          "marks": 6.5,
+          "title": "Discuss the export procedure, in brief."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.5,
+          "title": "What are meant by PCNs, HCNs and TCNs?"
+        },
+        {
+          "marks": 7.0,
+          "title": "Why do we need multinational company?"
+        },
+        {
+          "marks": 6.0,
+          "title": "How does multinational create problem to the host countries?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.0,
+          "title": "What is your idea about partnership?"
+        },
+        {
+          "marks": 8.0,
+          "title": "Discuss the advantages and disadvantages of partnership."
+        },
+        {
+          "marks": 6.5,
+          "title": "Differentiate between partnership and sole proprietorship."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.0,
+          "title": "What is joint stock company?"
+        },
+        {
+          "marks": 6.5,
+          "title": "Differentiate between private limited company and public limited company."
+        },
+        {
+          "marks": 8.0,
+          "title": "Describe the merits and demerits of joint stock company."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "Social responsibility"
+        },
+        {
+          "marks": 3.5,
+          "title": "IPO"
+        },
+        {
+          "marks": 3.5,
+          "title": "EPZ"
+        },
+        {
+          "marks": 3.5,
+          "title": "Cooperative society"
+        },
+        {
+          "marks": 3.5,
+          "title": "Business combination"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.5,
+          "title": "Define trade, commerce and industry."
+        },
+        {
+          "marks": 6.5,
+          "title": "What are the factors of production? Discuss."
+        },
+        {
+          "marks": 6.5,
+          "title": "Discuss the responsibility of business to the society."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "What is partnership business? What are its' base?"
+        },
+        {
+          "marks": 7.5,
+          "title": "Discuss the different types of partnership business."
+        },
+        {
+          "marks": 5,
+          "title": "Describe the different modes of dissolution of partnership."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.5,
+          "title": "What is prospectus?"
+        },
+        {
+          "marks": 6.5,
+          "title": "Differentiate between private limited and public limited company."
+        },
+        {
+          "marks": 6.5,
+          "title": "Do you think that \"Joint stock company is the best?\" Explain."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "Describe in short the export procedure."
+        },
+        {
+          "marks": 5.5,
+          "title": "Mention the name of the documents used in export and import."
+        },
+        {
+          "marks": 6,
+          "title": "What are the barriers to export trade in Bangladesh."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "What is state enterprise?"
+        },
+        {
+          "marks": 6,
+          "title": "Discuss the importance of state enterprise."
+        },
+        {
+          "marks": 7.5,
+          "title": "Describe the different forms of state enterprise."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "What is meant by business combination?"
+        },
+        {
+          "marks": 6,
+          "title": "Why business people go for business combination?"
+        },
+        {
+          "marks": 7.5,
+          "title": "Discuss the different forms of business combination."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "What is business? Explain the functions of business."
+        },
+        {
+          "marks": 5.5,
+          "title": "How do you reconcile the economic objective with social objectives of business? Explain."
+        },
+        {
+          "marks": 6,
+          "title": "Discuss the factors affecting business location."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "Discuss the advantages and disadvantages of partnership."
+        },
+        {
+          "marks": 5,
+          "title": "How does a partnership differ from a sole proprietorship?"
+        },
+        {
+          "marks": 6.5,
+          "title": "Explain how cooperative society operates."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "What are meant by 'balance of trade' and 'balance of payment'?"
+        },
+        {
+          "marks": 3,
+          "title": "Discuss the importance of foreign trade."
+        },
+        {
+          "marks": 4.5,
+          "title": "Differentiate between bill of lading and charter party."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.5,
+          "title": "What is meant by joint stock company?"
+        },
+        {
+          "marks": 6.5,
+          "title": "Differentiate between private limited company and public limited company."
+        },
+        {
+          "marks": 6.5,
+          "title": "Describe the merits of joint stock company."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "What do you mean by \"Home Country\" and \"Host Country\"?"
+        },
+        {
+          "marks": 7.5,
+          "title": "Why do we need multinational company?"
+        },
+        {
+          "marks": 6,
+          "title": "How does multinational create problem to the host countries?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.375,
+          "title": "EPZ"
+        },
+        {
+          "marks": 4.375,
+          "title": "FBCCI"
+        },
+        {
+          "marks": 4.375,
+          "title": "Business combination"
+        },
+        {
+          "marks": 4.375,
+          "title": "Business environment"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "\"A business is any activity that provides goods and services to customers for the purpose of making a profit.\" Explain with example."
+        },
+        {
+          "marks": 7.5,
+          "title": "What are the external forces that influence business activities?"
+        },
+        {
+          "marks": 7.5,
+          "title": "Describe the factors of production and explain the importance of location for business."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "Define Social Responsibility of business."
+        },
+        {
+          "marks": 5,
+          "title": "Explain how organizations are responsible to their stakeholders."
+        },
+        {
+          "marks": 5,
+          "title": "How can you recognize a socially responsible organization?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "Why do nations trade?"
+        },
+        {
+          "marks": 5,
+          "title": "How do we measure trade between nations?"
+        },
+        {
+          "marks": 7.5,
+          "title": "Describe the ways in which government and international bodies promote and regulate foreign trade."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4.5,
+          "title": "What is share market?"
+        },
+        {
+          "marks": 8,
+          "title": "Describe the activities of Dhaka Stock Exchange."
+        },
+        {
+          "marks": 5,
+          "title": "Present your knowledge about stock and IPO."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is state enterprise?"
+        },
+        {
+          "marks": 8,
+          "title": "Briefly describe the different forms of state enterprise?"
+        },
+        {
+          "marks": 6.5,
+          "title": "Discuss the need for state enterprise."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is cooperative society?"
+        },
+        {
+          "marks": 8,
+          "title": "Describe the different types of cooperative society that you find in Bangladesh."
+        },
+        {
+          "marks": 6.5,
+          "title": "Discuss the importance of cooperative society."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "Define trade, commerce, and industry."
+        },
+        {
+          "marks": 8,
+          "title": "Describe the features of business."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7,
+          "title": "Describe the different types of partnership business."
+        },
+        {
+          "marks": 7,
+          "title": "Discuss the different types of partners."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7,
+          "title": "Differentiate between private and public limited companies."
+        },
+        {
+          "marks": 7,
+          "title": "Describe the advantages of joint stock company."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7,
+          "title": "\"Sole proprietorship is best, if the owner possesses all the qualities\" - do you agree? Explain."
+        },
+        {
+          "marks": 7,
+          "title": "State the disadvantages of sole proprietorship."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "How would you define export and import?"
+        },
+        {
+          "marks": 6,
+          "title": "Describe in short the export procedure."
+        },
+        {
+          "marks": 5,
+          "title": "What are the major barriers to export trade in Bangladesh?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7,
+          "title": "Discuss the advantages of multinational corporations."
+        },
+        {
+          "marks": 7,
+          "title": "How do they create problems for host countries? Discuss."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3.5,
+          "title": "MOA and AOA"
+        },
+        {
+          "marks": 3.5,
+          "title": "Cooperative society"
+        },
+        {
+          "marks": 3.5,
+          "title": "FBCCI"
+        },
+        {
+          "marks": 3.5,
+          "title": "E-commerce"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 6,
+          "title": "What are meant by trade, commerce and industry?"
+        },
+        {
+          "marks": 8,
+          "title": "Discuss the prerequisites for the success of a business."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7,
+          "title": "What is the base of partnership? Describe the implied duties of partners."
+        },
+        {
+          "marks": 7,
+          "title": "Discuss the different types of partnership business."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 4,
+          "title": "What are meant by 'balance of trade' and 'balance of payment'?"
+        },
+        {
+          "marks": 6,
+          "title": "Briefly describe the export procedure."
+        },
+        {
+          "marks": 4,
+          "title": "Mention the name of the documents used in export and import."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is meant by state enterprises?"
+        },
+        {
+          "marks": 5,
+          "title": "What are the fields suitable for state enterprises?"
+        },
+        {
+          "marks": 6,
+          "title": "Why are state-owned enterprises in Bangladesh incurring huge loss every year?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is share market?"
+        },
+        {
+          "marks": 4,
+          "title": "Which type of share is best for investment in a share market?"
+        },
+        {
+          "marks": 7,
+          "title": "Discuss the activities of Dhaka Stock Exchange."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "Differentiate between MOA and AOA?"
+        },
+        {
+          "marks": 7,
+          "title": "Describe the distinctive characteristics of joint stock company."
+        },
+        {
+          "marks": 2,
+          "title": "What is certificate of commencement?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What do you know about multinational corporations (MNCs)?"
+        },
+        {
+          "marks": 6,
+          "title": "Discuss the economic importance of MNCs to a host country."
+        },
+        {
+          "marks": 5,
+          "title": "How does MNCs also create problems for a host country?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "Define business. Discuss the different branches of business."
+        },
+        {
+          "marks": 7.5,
+          "title": "Discuss the responsibility of business to the society."
+        },
+        {
+          "marks": 5,
+          "title": "What qualities should you posses as a businessman?"
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5,
+          "title": "What is prospectus? What are its contents?"
+        },
+        {
+          "marks": 5,
+          "title": "Differentiate between public and private limited company."
+        },
+        {
+          "marks": 7.5,
+          "title": "Describe the formation of a joint stock company."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "What is meant by business combination?"
+        },
+        {
+          "marks": 7,
+          "title": "What are the causes of business combination?"
+        },
+        {
+          "marks": 7.5,
+          "title": "Briefly describe the different forms of business combination."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 7.5,
+          "title": "Define sole proprietorship business and discuss its features."
+        },
+        {
+          "marks": 5,
+          "title": "Discuss the suitable fields for sole proprietorship business."
+        },
+        {
+          "marks": 5,
+          "title": "Write the causes of survival of sole proprietorship business side by side large scale business."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 5.5,
+          "title": "Define Co-operative society and discuss its objectives."
+        },
+        {
+          "marks": 7,
+          "title": "What are the principles of co-operative society?"
+        },
+        {
+          "marks": 5,
+          "title": "Discuss the role of co-operative society in marketing of agricultural products."
+        }
+      ]
+    },
+    {
+      "sub_questions": [
+        {
+          "marks": 3,
+          "title": "Define Import and Export."
+        },
+        {
+          "marks": 8,
+          "title": "Discuss the import procedure."
+        },
+        {
+          "marks": 6.5,
+          "title": "Discuss the barriers of export trade in Bangladesh."
+        }
+      ]
+    }
+  ]
+}
